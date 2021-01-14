@@ -5,6 +5,10 @@ VisualStudioVersion = 16.0.30804.86
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DisposingIssue", "DisposingIssue\DisposingIssue.csproj", "{6477BE79-DA99-40ED-B448-0CAF6B6A8B10}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestWcfOnNetStandard", "TestWcfOnNetStandard\TestWcfOnNetStandard.csproj", "{D53A9BDD-0FF0-4D72-A5A9-A48D6DBD4329}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetStandard20ToWcf", "NetStandard20ToWcf\NetStandard20ToWcf.csproj", "{AF26DB41-47DC-47A2-8FD7-377FEBE6B6C7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{6477BE79-DA99-40ED-B448-0CAF6B6A8B10}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6477BE79-DA99-40ED-B448-0CAF6B6A8B10}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6477BE79-DA99-40ED-B448-0CAF6B6A8B10}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D53A9BDD-0FF0-4D72-A5A9-A48D6DBD4329}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D53A9BDD-0FF0-4D72-A5A9-A48D6DBD4329}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D53A9BDD-0FF0-4D72-A5A9-A48D6DBD4329}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D53A9BDD-0FF0-4D72-A5A9-A48D6DBD4329}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF26DB41-47DC-47A2-8FD7-377FEBE6B6C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF26DB41-47DC-47A2-8FD7-377FEBE6B6C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF26DB41-47DC-47A2-8FD7-377FEBE6B6C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF26DB41-47DC-47A2-8FD7-377FEBE6B6C7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
