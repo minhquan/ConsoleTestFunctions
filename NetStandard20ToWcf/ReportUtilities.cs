@@ -12,6 +12,26 @@ namespace NetStandard20ToWcf
 {
     public class ReportUtilities
     {
+        private const string CompanyReportFolder = "/Betenbough";
+
+        public ReportService.CatalogItem[] GetReports()
+        {
+            var bind = new BasicHttpBinding();
+            bind.Security.Mode = BasicHttpSecurityMode.TransportCredentialOnly;
+            bind.Security.Transport.ClientCredentialType = HttpClientCredentialType.Ntlm;
+            bind.MaxReceivedMessageSize = 64000000;
+
+            var endpoint = new EndpointAddress("http://sqllive/ReportServer/ReportService2005.asmx");
+
+            var service = new ReportService.ReportingService2005SoapClient(bind, endpoint);
+            service.ClientCredentials.Windows.AllowedImpersonationLevel = TokenImpersonationLevel.Impersonation;
+            service.ChannelFactory.Credentials.Windows.ClientCredential = CredentialCache.DefaultNetworkCredentials;
+
+            ReportService.CatalogItem[] items;
+            service.ListChildren(CompanyReportFolder, true, out items);
+            return items;
+        }
+
         public async Task<ReportService.CatalogItem[]> GetReportsAsync()
         {
             var bind = new BasicHttpBinding();

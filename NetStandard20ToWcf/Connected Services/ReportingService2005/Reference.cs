@@ -16,6 +16,7 @@ namespace ReportingService2005
     public interface ReportingService2005Soap
     {
         
+        // CODEGEN: Generating message contract since message ListSecureMethodsResponse has headers
         [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Lis" +
             "tSecureMethods", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
@@ -23,8 +24,13 @@ namespace ReportingService2005
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ExpirationDefinition))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RecurrencePattern))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ScheduleDefinitionOrReference))]
+        ReportingService2005.ListSecureMethodsResponse ListSecureMethods(ReportingService2005.ListSecureMethodsRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Lis" +
+            "tSecureMethods", ReplyAction="*")]
         System.Threading.Tasks.Task<ReportingService2005.ListSecureMethodsResponse> ListSecureMethodsAsync(ReportingService2005.ListSecureMethodsRequest request);
         
+        // CODEGEN: Generating message contract since message CreateBatchResponse has headers
         [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Cre" +
             "ateBatch", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
@@ -32,8 +38,13 @@ namespace ReportingService2005
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ExpirationDefinition))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RecurrencePattern))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ScheduleDefinitionOrReference))]
+        ReportingService2005.CreateBatchResponse CreateBatch(ReportingService2005.CreateBatchRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Cre" +
+            "ateBatch", ReplyAction="*")]
         System.Threading.Tasks.Task<ReportingService2005.CreateBatchResponse> CreateBatchAsync(ReportingService2005.CreateBatchRequest request);
         
+        // CODEGEN: Generating message contract since message CancelBatchRequest has headers
         [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Can" +
             "celBatch", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
@@ -41,8 +52,13 @@ namespace ReportingService2005
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ExpirationDefinition))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RecurrencePattern))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ScheduleDefinitionOrReference))]
+        ReportingService2005.CancelBatchResponse CancelBatch(ReportingService2005.CancelBatchRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Can" +
+            "celBatch", ReplyAction="*")]
         System.Threading.Tasks.Task<ReportingService2005.CancelBatchResponse> CancelBatchAsync(ReportingService2005.CancelBatchRequest request);
         
+        // CODEGEN: Generating message contract since message ExecuteBatchRequest has headers
         [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Exe" +
             "cuteBatch", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
@@ -50,8 +66,13 @@ namespace ReportingService2005
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ExpirationDefinition))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RecurrencePattern))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ScheduleDefinitionOrReference))]
+        ReportingService2005.ExecuteBatchResponse ExecuteBatch(ReportingService2005.ExecuteBatchRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Exe" +
+            "cuteBatch", ReplyAction="*")]
         System.Threading.Tasks.Task<ReportingService2005.ExecuteBatchResponse> ExecuteBatchAsync(ReportingService2005.ExecuteBatchRequest request);
         
+        // CODEGEN: Generating message contract since message GetSystemPropertiesResponse has headers
         [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Get" +
             "SystemProperties", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
@@ -59,8 +80,13 @@ namespace ReportingService2005
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ExpirationDefinition))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RecurrencePattern))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ScheduleDefinitionOrReference))]
+        ReportingService2005.GetSystemPropertiesResponse GetSystemProperties(ReportingService2005.GetSystemPropertiesRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Get" +
+            "SystemProperties", ReplyAction="*")]
         System.Threading.Tasks.Task<ReportingService2005.GetSystemPropertiesResponse> GetSystemPropertiesAsync(ReportingService2005.GetSystemPropertiesRequest request);
         
+        // CODEGEN: Generating message contract since message SetSystemPropertiesResponse has headers
         [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Set" +
             "SystemProperties", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
@@ -68,8 +94,13 @@ namespace ReportingService2005
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ExpirationDefinition))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RecurrencePattern))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ScheduleDefinitionOrReference))]
+        ReportingService2005.SetSystemPropertiesResponse SetSystemProperties(ReportingService2005.SetSystemPropertiesRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Set" +
+            "SystemProperties", ReplyAction="*")]
         System.Threading.Tasks.Task<ReportingService2005.SetSystemPropertiesResponse> SetSystemPropertiesAsync(ReportingService2005.SetSystemPropertiesRequest request);
         
+        // CODEGEN: Generating message contract since message DeleteItemRequest has headers
         [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Del" +
             "eteItem", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
@@ -77,8 +108,13 @@ namespace ReportingService2005
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ExpirationDefinition))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RecurrencePattern))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ScheduleDefinitionOrReference))]
+        ReportingService2005.DeleteItemResponse DeleteItem(ReportingService2005.DeleteItemRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Del" +
+            "eteItem", ReplyAction="*")]
         System.Threading.Tasks.Task<ReportingService2005.DeleteItemResponse> DeleteItemAsync(ReportingService2005.DeleteItemRequest request);
         
+        // CODEGEN: Generating message contract since message MoveItemRequest has headers
         [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Mov" +
             "eItem", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
@@ -86,8 +122,13 @@ namespace ReportingService2005
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ExpirationDefinition))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RecurrencePattern))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ScheduleDefinitionOrReference))]
+        ReportingService2005.MoveItemResponse MoveItem(ReportingService2005.MoveItemRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Mov" +
+            "eItem", ReplyAction="*")]
         System.Threading.Tasks.Task<ReportingService2005.MoveItemResponse> MoveItemAsync(ReportingService2005.MoveItemRequest request);
         
+        // CODEGEN: Generating message contract since message ListChildrenResponse has headers
         [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Lis" +
             "tChildren", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
@@ -95,8 +136,13 @@ namespace ReportingService2005
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ExpirationDefinition))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RecurrencePattern))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ScheduleDefinitionOrReference))]
+        ReportingService2005.ListChildrenResponse ListChildren(ReportingService2005.ListChildrenRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Lis" +
+            "tChildren", ReplyAction="*")]
         System.Threading.Tasks.Task<ReportingService2005.ListChildrenResponse> ListChildrenAsync(ReportingService2005.ListChildrenRequest request);
         
+        // CODEGEN: Generating message contract since message ListDependentItemsResponse has headers
         [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Lis" +
             "tDependentItems", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
@@ -104,8 +150,13 @@ namespace ReportingService2005
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ExpirationDefinition))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RecurrencePattern))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ScheduleDefinitionOrReference))]
+        ReportingService2005.ListDependentItemsResponse ListDependentItems(ReportingService2005.ListDependentItemsRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Lis" +
+            "tDependentItems", ReplyAction="*")]
         System.Threading.Tasks.Task<ReportingService2005.ListDependentItemsResponse> ListDependentItemsAsync(ReportingService2005.ListDependentItemsRequest request);
         
+        // CODEGEN: Generating message contract since message GetPropertiesRequest has headers
         [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Get" +
             "Properties", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
@@ -113,8 +164,13 @@ namespace ReportingService2005
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ExpirationDefinition))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RecurrencePattern))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ScheduleDefinitionOrReference))]
+        ReportingService2005.GetPropertiesResponse GetProperties(ReportingService2005.GetPropertiesRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Get" +
+            "Properties", ReplyAction="*")]
         System.Threading.Tasks.Task<ReportingService2005.GetPropertiesResponse> GetPropertiesAsync(ReportingService2005.GetPropertiesRequest request);
         
+        // CODEGEN: Generating message contract since message SetPropertiesRequest has headers
         [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Set" +
             "Properties", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
@@ -122,8 +178,13 @@ namespace ReportingService2005
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ExpirationDefinition))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RecurrencePattern))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ScheduleDefinitionOrReference))]
+        ReportingService2005.SetPropertiesResponse SetProperties(ReportingService2005.SetPropertiesRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Set" +
+            "Properties", ReplyAction="*")]
         System.Threading.Tasks.Task<ReportingService2005.SetPropertiesResponse> SetPropertiesAsync(ReportingService2005.SetPropertiesRequest request);
         
+        // CODEGEN: Generating message contract since message GetItemTypeResponse has headers
         [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Get" +
             "ItemType", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
@@ -131,8 +192,13 @@ namespace ReportingService2005
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ExpirationDefinition))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RecurrencePattern))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ScheduleDefinitionOrReference))]
+        ReportingService2005.GetItemTypeResponse GetItemType(ReportingService2005.GetItemTypeRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Get" +
+            "ItemType", ReplyAction="*")]
         System.Threading.Tasks.Task<ReportingService2005.GetItemTypeResponse> GetItemTypeAsync(ReportingService2005.GetItemTypeRequest request);
         
+        // CODEGEN: Generating message contract since message CreateFolderRequest has headers
         [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Cre" +
             "ateFolder", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
@@ -140,8 +206,13 @@ namespace ReportingService2005
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ExpirationDefinition))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RecurrencePattern))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ScheduleDefinitionOrReference))]
+        ReportingService2005.CreateFolderResponse CreateFolder(ReportingService2005.CreateFolderRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Cre" +
+            "ateFolder", ReplyAction="*")]
         System.Threading.Tasks.Task<ReportingService2005.CreateFolderResponse> CreateFolderAsync(ReportingService2005.CreateFolderRequest request);
         
+        // CODEGEN: Generating message contract since message CreateReportRequest has headers
         [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Cre" +
             "ateReport", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
@@ -149,8 +220,13 @@ namespace ReportingService2005
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ExpirationDefinition))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RecurrencePattern))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ScheduleDefinitionOrReference))]
+        ReportingService2005.CreateReportResponse CreateReport(ReportingService2005.CreateReportRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Cre" +
+            "ateReport", ReplyAction="*")]
         System.Threading.Tasks.Task<ReportingService2005.CreateReportResponse> CreateReportAsync(ReportingService2005.CreateReportRequest request);
         
+        // CODEGEN: Generating message contract since message GetReportDefinitionResponse has headers
         [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Get" +
             "ReportDefinition", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
@@ -158,8 +234,13 @@ namespace ReportingService2005
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ExpirationDefinition))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RecurrencePattern))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ScheduleDefinitionOrReference))]
+        ReportingService2005.GetReportDefinitionResponse GetReportDefinition(ReportingService2005.GetReportDefinitionRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Get" +
+            "ReportDefinition", ReplyAction="*")]
         System.Threading.Tasks.Task<ReportingService2005.GetReportDefinitionResponse> GetReportDefinitionAsync(ReportingService2005.GetReportDefinitionRequest request);
         
+        // CODEGEN: Generating message contract since message SetReportDefinitionRequest has headers
         [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Set" +
             "ReportDefinition", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
@@ -167,8 +248,13 @@ namespace ReportingService2005
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ExpirationDefinition))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RecurrencePattern))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ScheduleDefinitionOrReference))]
+        ReportingService2005.SetReportDefinitionResponse SetReportDefinition(ReportingService2005.SetReportDefinitionRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Set" +
+            "ReportDefinition", ReplyAction="*")]
         System.Threading.Tasks.Task<ReportingService2005.SetReportDefinitionResponse> SetReportDefinitionAsync(ReportingService2005.SetReportDefinitionRequest request);
         
+        // CODEGEN: Generating message contract since message CreateResourceRequest has headers
         [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Cre" +
             "ateResource", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
@@ -176,8 +262,13 @@ namespace ReportingService2005
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ExpirationDefinition))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RecurrencePattern))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ScheduleDefinitionOrReference))]
+        ReportingService2005.CreateResourceResponse CreateResource(ReportingService2005.CreateResourceRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Cre" +
+            "ateResource", ReplyAction="*")]
         System.Threading.Tasks.Task<ReportingService2005.CreateResourceResponse> CreateResourceAsync(ReportingService2005.CreateResourceRequest request);
         
+        // CODEGEN: Generating message contract since message SetResourceContentsRequest has headers
         [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Set" +
             "ResourceContents", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
@@ -185,18 +276,27 @@ namespace ReportingService2005
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ExpirationDefinition))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RecurrencePattern))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ScheduleDefinitionOrReference))]
+        ReportingService2005.SetResourceContentsResponse SetResourceContents(ReportingService2005.SetResourceContentsRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Set" +
+            "ResourceContents", ReplyAction="*")]
         System.Threading.Tasks.Task<ReportingService2005.SetResourceContentsResponse> SetResourceContentsAsync(ReportingService2005.SetResourceContentsRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Get" +
+            "ResourceContents", ReplyAction="*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataSourceDefinitionOrReference))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ExpirationDefinition))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RecurrencePattern))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ScheduleDefinitionOrReference))]
+        ReportingService2005.GetResourceContentsResponse GetResourceContents(ReportingService2005.GetResourceContentsRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Get" +
             "ResourceContents", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataSourceDefinitionOrReference))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ExpirationDefinition))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RecurrencePattern))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ScheduleDefinitionOrReference))]
         System.Threading.Tasks.Task<ReportingService2005.GetResourceContentsResponse> GetResourceContentsAsync(ReportingService2005.GetResourceContentsRequest request);
         
+        // CODEGEN: Generating message contract since message GetReportParametersResponse has headers
         [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Get" +
             "ReportParameters", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
@@ -204,8 +304,13 @@ namespace ReportingService2005
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ExpirationDefinition))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RecurrencePattern))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ScheduleDefinitionOrReference))]
+        ReportingService2005.GetReportParametersResponse GetReportParameters(ReportingService2005.GetReportParametersRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Get" +
+            "ReportParameters", ReplyAction="*")]
         System.Threading.Tasks.Task<ReportingService2005.GetReportParametersResponse> GetReportParametersAsync(ReportingService2005.GetReportParametersRequest request);
         
+        // CODEGEN: Generating message contract since message SetReportParametersRequest has headers
         [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Set" +
             "ReportParameters", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
@@ -213,8 +318,13 @@ namespace ReportingService2005
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ExpirationDefinition))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RecurrencePattern))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ScheduleDefinitionOrReference))]
+        ReportingService2005.SetReportParametersResponse SetReportParameters(ReportingService2005.SetReportParametersRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Set" +
+            "ReportParameters", ReplyAction="*")]
         System.Threading.Tasks.Task<ReportingService2005.SetReportParametersResponse> SetReportParametersAsync(ReportingService2005.SetReportParametersRequest request);
         
+        // CODEGEN: Generating message contract since message CreateLinkedReportRequest has headers
         [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Cre" +
             "ateLinkedReport", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
@@ -222,8 +332,13 @@ namespace ReportingService2005
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ExpirationDefinition))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RecurrencePattern))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ScheduleDefinitionOrReference))]
+        ReportingService2005.CreateLinkedReportResponse CreateLinkedReport(ReportingService2005.CreateLinkedReportRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Cre" +
+            "ateLinkedReport", ReplyAction="*")]
         System.Threading.Tasks.Task<ReportingService2005.CreateLinkedReportResponse> CreateLinkedReportAsync(ReportingService2005.CreateLinkedReportRequest request);
         
+        // CODEGEN: Generating message contract since message GetReportLinkResponse has headers
         [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Get" +
             "ReportLink", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
@@ -231,8 +346,13 @@ namespace ReportingService2005
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ExpirationDefinition))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RecurrencePattern))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ScheduleDefinitionOrReference))]
+        ReportingService2005.GetReportLinkResponse GetReportLink(ReportingService2005.GetReportLinkRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Get" +
+            "ReportLink", ReplyAction="*")]
         System.Threading.Tasks.Task<ReportingService2005.GetReportLinkResponse> GetReportLinkAsync(ReportingService2005.GetReportLinkRequest request);
         
+        // CODEGEN: Generating message contract since message SetReportLinkRequest has headers
         [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Set" +
             "ReportLink", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
@@ -240,9 +360,12 @@ namespace ReportingService2005
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ExpirationDefinition))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RecurrencePattern))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ScheduleDefinitionOrReference))]
+        ReportingService2005.SetReportLinkResponse SetReportLink(ReportingService2005.SetReportLinkRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Set" +
+            "ReportLink", ReplyAction="*")]
         System.Threading.Tasks.Task<ReportingService2005.SetReportLinkResponse> SetReportLinkAsync(ReportingService2005.SetReportLinkRequest request);
         
-        // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Get" +
             "RenderResource", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
@@ -250,8 +373,14 @@ namespace ReportingService2005
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ExpirationDefinition))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RecurrencePattern))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ScheduleDefinitionOrReference))]
+        ReportingService2005.GetRenderResourceResponse GetRenderResource(ReportingService2005.GetRenderResourceRequest request);
+        
+        // CODEGEN: Generating message contract since the operation has multiple return values.
+        [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Get" +
+            "RenderResource", ReplyAction="*")]
         System.Threading.Tasks.Task<ReportingService2005.GetRenderResourceResponse> GetRenderResourceAsync(ReportingService2005.GetRenderResourceRequest request);
         
+        // CODEGEN: Generating message contract since message SetExecutionOptionsRequest has headers
         [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Set" +
             "ExecutionOptions", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
@@ -259,9 +388,12 @@ namespace ReportingService2005
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ExpirationDefinition))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RecurrencePattern))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ScheduleDefinitionOrReference))]
+        ReportingService2005.SetExecutionOptionsResponse SetExecutionOptions(ReportingService2005.SetExecutionOptionsRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Set" +
+            "ExecutionOptions", ReplyAction="*")]
         System.Threading.Tasks.Task<ReportingService2005.SetExecutionOptionsResponse> SetExecutionOptionsAsync(ReportingService2005.SetExecutionOptionsRequest request);
         
-        // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Get" +
             "ExecutionOptions", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
@@ -269,8 +401,14 @@ namespace ReportingService2005
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ExpirationDefinition))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RecurrencePattern))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ScheduleDefinitionOrReference))]
+        ReportingService2005.GetExecutionOptionsResponse GetExecutionOptions(ReportingService2005.GetExecutionOptionsRequest request);
+        
+        // CODEGEN: Generating message contract since the operation has multiple return values.
+        [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Get" +
+            "ExecutionOptions", ReplyAction="*")]
         System.Threading.Tasks.Task<ReportingService2005.GetExecutionOptionsResponse> GetExecutionOptionsAsync(ReportingService2005.GetExecutionOptionsRequest request);
         
+        // CODEGEN: Generating message contract since message SetCacheOptionsRequest has headers
         [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Set" +
             "CacheOptions", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
@@ -278,9 +416,12 @@ namespace ReportingService2005
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ExpirationDefinition))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RecurrencePattern))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ScheduleDefinitionOrReference))]
+        ReportingService2005.SetCacheOptionsResponse SetCacheOptions(ReportingService2005.SetCacheOptionsRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Set" +
+            "CacheOptions", ReplyAction="*")]
         System.Threading.Tasks.Task<ReportingService2005.SetCacheOptionsResponse> SetCacheOptionsAsync(ReportingService2005.SetCacheOptionsRequest request);
         
-        // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Get" +
             "CacheOptions", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
@@ -288,8 +429,14 @@ namespace ReportingService2005
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ExpirationDefinition))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RecurrencePattern))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ScheduleDefinitionOrReference))]
+        ReportingService2005.GetCacheOptionsResponse GetCacheOptions(ReportingService2005.GetCacheOptionsRequest request);
+        
+        // CODEGEN: Generating message contract since the operation has multiple return values.
+        [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Get" +
+            "CacheOptions", ReplyAction="*")]
         System.Threading.Tasks.Task<ReportingService2005.GetCacheOptionsResponse> GetCacheOptionsAsync(ReportingService2005.GetCacheOptionsRequest request);
         
+        // CODEGEN: Generating message contract since message UpdateReportExecutionSnapshotRequest has headers
         [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Upd" +
             "ateReportExecutionSnapshot", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
@@ -297,8 +444,13 @@ namespace ReportingService2005
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ExpirationDefinition))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RecurrencePattern))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ScheduleDefinitionOrReference))]
+        ReportingService2005.UpdateReportExecutionSnapshotResponse UpdateReportExecutionSnapshot(ReportingService2005.UpdateReportExecutionSnapshotRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Upd" +
+            "ateReportExecutionSnapshot", ReplyAction="*")]
         System.Threading.Tasks.Task<ReportingService2005.UpdateReportExecutionSnapshotResponse> UpdateReportExecutionSnapshotAsync(ReportingService2005.UpdateReportExecutionSnapshotRequest request);
         
+        // CODEGEN: Generating message contract since message FlushCacheRequest has headers
         [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Flu" +
             "shCache", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
@@ -306,8 +458,13 @@ namespace ReportingService2005
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ExpirationDefinition))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RecurrencePattern))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ScheduleDefinitionOrReference))]
+        ReportingService2005.FlushCacheResponse FlushCache(ReportingService2005.FlushCacheRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Flu" +
+            "shCache", ReplyAction="*")]
         System.Threading.Tasks.Task<ReportingService2005.FlushCacheResponse> FlushCacheAsync(ReportingService2005.FlushCacheRequest request);
         
+        // CODEGEN: Generating message contract since message ListJobsResponse has headers
         [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Lis" +
             "tJobs", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
@@ -315,8 +472,13 @@ namespace ReportingService2005
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ExpirationDefinition))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RecurrencePattern))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ScheduleDefinitionOrReference))]
+        ReportingService2005.ListJobsResponse ListJobs(ReportingService2005.ListJobsRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Lis" +
+            "tJobs", ReplyAction="*")]
         System.Threading.Tasks.Task<ReportingService2005.ListJobsResponse> ListJobsAsync(ReportingService2005.ListJobsRequest request);
         
+        // CODEGEN: Generating message contract since message CancelJobResponse has headers
         [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Can" +
             "celJob", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
@@ -324,8 +486,13 @@ namespace ReportingService2005
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ExpirationDefinition))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RecurrencePattern))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ScheduleDefinitionOrReference))]
+        ReportingService2005.CancelJobResponse CancelJob(ReportingService2005.CancelJobRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Can" +
+            "celJob", ReplyAction="*")]
         System.Threading.Tasks.Task<ReportingService2005.CancelJobResponse> CancelJobAsync(ReportingService2005.CancelJobRequest request);
         
+        // CODEGEN: Generating message contract since message CreateDataSourceRequest has headers
         [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Cre" +
             "ateDataSource", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
@@ -333,8 +500,13 @@ namespace ReportingService2005
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ExpirationDefinition))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RecurrencePattern))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ScheduleDefinitionOrReference))]
+        ReportingService2005.CreateDataSourceResponse CreateDataSource(ReportingService2005.CreateDataSourceRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Cre" +
+            "ateDataSource", ReplyAction="*")]
         System.Threading.Tasks.Task<ReportingService2005.CreateDataSourceResponse> CreateDataSourceAsync(ReportingService2005.CreateDataSourceRequest request);
         
+        // CODEGEN: Generating message contract since message GetDataSourceContentsResponse has headers
         [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Get" +
             "DataSourceContents", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
@@ -342,8 +514,13 @@ namespace ReportingService2005
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ExpirationDefinition))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RecurrencePattern))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ScheduleDefinitionOrReference))]
+        ReportingService2005.GetDataSourceContentsResponse GetDataSourceContents(ReportingService2005.GetDataSourceContentsRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Get" +
+            "DataSourceContents", ReplyAction="*")]
         System.Threading.Tasks.Task<ReportingService2005.GetDataSourceContentsResponse> GetDataSourceContentsAsync(ReportingService2005.GetDataSourceContentsRequest request);
         
+        // CODEGEN: Generating message contract since message SetDataSourceContentsRequest has headers
         [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Set" +
             "DataSourceContents", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
@@ -351,8 +528,13 @@ namespace ReportingService2005
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ExpirationDefinition))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RecurrencePattern))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ScheduleDefinitionOrReference))]
+        ReportingService2005.SetDataSourceContentsResponse SetDataSourceContents(ReportingService2005.SetDataSourceContentsRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Set" +
+            "DataSourceContents", ReplyAction="*")]
         System.Threading.Tasks.Task<ReportingService2005.SetDataSourceContentsResponse> SetDataSourceContentsAsync(ReportingService2005.SetDataSourceContentsRequest request);
         
+        // CODEGEN: Generating message contract since message EnableDataSourceRequest has headers
         [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Ena" +
             "bleDataSource", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
@@ -360,8 +542,13 @@ namespace ReportingService2005
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ExpirationDefinition))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RecurrencePattern))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ScheduleDefinitionOrReference))]
+        ReportingService2005.EnableDataSourceResponse EnableDataSource(ReportingService2005.EnableDataSourceRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Ena" +
+            "bleDataSource", ReplyAction="*")]
         System.Threading.Tasks.Task<ReportingService2005.EnableDataSourceResponse> EnableDataSourceAsync(ReportingService2005.EnableDataSourceRequest request);
         
+        // CODEGEN: Generating message contract since message DisableDataSourceRequest has headers
         [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Dis" +
             "ableDataSource", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
@@ -369,8 +556,13 @@ namespace ReportingService2005
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ExpirationDefinition))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RecurrencePattern))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ScheduleDefinitionOrReference))]
+        ReportingService2005.DisableDataSourceResponse DisableDataSource(ReportingService2005.DisableDataSourceRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Dis" +
+            "ableDataSource", ReplyAction="*")]
         System.Threading.Tasks.Task<ReportingService2005.DisableDataSourceResponse> DisableDataSourceAsync(ReportingService2005.DisableDataSourceRequest request);
         
+        // CODEGEN: Generating message contract since message SetItemDataSourcesRequest has headers
         [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Set" +
             "ItemDataSources", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
@@ -378,8 +570,13 @@ namespace ReportingService2005
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ExpirationDefinition))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RecurrencePattern))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ScheduleDefinitionOrReference))]
+        ReportingService2005.SetItemDataSourcesResponse SetItemDataSources(ReportingService2005.SetItemDataSourcesRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Set" +
+            "ItemDataSources", ReplyAction="*")]
         System.Threading.Tasks.Task<ReportingService2005.SetItemDataSourcesResponse> SetItemDataSourcesAsync(ReportingService2005.SetItemDataSourcesRequest request);
         
+        // CODEGEN: Generating message contract since message GetItemDataSourcesResponse has headers
         [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Get" +
             "ItemDataSources", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
@@ -387,8 +584,13 @@ namespace ReportingService2005
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ExpirationDefinition))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RecurrencePattern))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ScheduleDefinitionOrReference))]
+        ReportingService2005.GetItemDataSourcesResponse GetItemDataSources(ReportingService2005.GetItemDataSourcesRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Get" +
+            "ItemDataSources", ReplyAction="*")]
         System.Threading.Tasks.Task<ReportingService2005.GetItemDataSourcesResponse> GetItemDataSourcesAsync(ReportingService2005.GetItemDataSourcesRequest request);
         
+        // CODEGEN: Generating message contract since message GetItemDataSourcePromptsResponse has headers
         [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Get" +
             "ItemDataSourcePrompts", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
@@ -396,9 +598,12 @@ namespace ReportingService2005
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ExpirationDefinition))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RecurrencePattern))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ScheduleDefinitionOrReference))]
+        ReportingService2005.GetItemDataSourcePromptsResponse GetItemDataSourcePrompts(ReportingService2005.GetItemDataSourcePromptsRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Get" +
+            "ItemDataSourcePrompts", ReplyAction="*")]
         System.Threading.Tasks.Task<ReportingService2005.GetItemDataSourcePromptsResponse> GetItemDataSourcePromptsAsync(ReportingService2005.GetItemDataSourcePromptsRequest request);
         
-        // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Cre" +
             "ateReportHistorySnapshot", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
@@ -406,8 +611,14 @@ namespace ReportingService2005
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ExpirationDefinition))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RecurrencePattern))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ScheduleDefinitionOrReference))]
+        ReportingService2005.CreateReportHistorySnapshotResponse CreateReportHistorySnapshot(ReportingService2005.CreateReportHistorySnapshotRequest request);
+        
+        // CODEGEN: Generating message contract since the operation has multiple return values.
+        [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Cre" +
+            "ateReportHistorySnapshot", ReplyAction="*")]
         System.Threading.Tasks.Task<ReportingService2005.CreateReportHistorySnapshotResponse> CreateReportHistorySnapshotAsync(ReportingService2005.CreateReportHistorySnapshotRequest request);
         
+        // CODEGEN: Generating message contract since message SetReportHistoryOptionsRequest has headers
         [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Set" +
             "ReportHistoryOptions", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
@@ -415,9 +626,12 @@ namespace ReportingService2005
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ExpirationDefinition))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RecurrencePattern))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ScheduleDefinitionOrReference))]
+        ReportingService2005.SetReportHistoryOptionsResponse SetReportHistoryOptions(ReportingService2005.SetReportHistoryOptionsRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Set" +
+            "ReportHistoryOptions", ReplyAction="*")]
         System.Threading.Tasks.Task<ReportingService2005.SetReportHistoryOptionsResponse> SetReportHistoryOptionsAsync(ReportingService2005.SetReportHistoryOptionsRequest request);
         
-        // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Get" +
             "ReportHistoryOptions", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
@@ -425,8 +639,14 @@ namespace ReportingService2005
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ExpirationDefinition))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RecurrencePattern))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ScheduleDefinitionOrReference))]
+        ReportingService2005.GetReportHistoryOptionsResponse GetReportHistoryOptions(ReportingService2005.GetReportHistoryOptionsRequest request);
+        
+        // CODEGEN: Generating message contract since the operation has multiple return values.
+        [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Get" +
+            "ReportHistoryOptions", ReplyAction="*")]
         System.Threading.Tasks.Task<ReportingService2005.GetReportHistoryOptionsResponse> GetReportHistoryOptionsAsync(ReportingService2005.GetReportHistoryOptionsRequest request);
         
+        // CODEGEN: Generating message contract since message SetReportHistoryLimitRequest has headers
         [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Set" +
             "ReportHistoryLimit", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
@@ -434,9 +654,12 @@ namespace ReportingService2005
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ExpirationDefinition))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RecurrencePattern))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ScheduleDefinitionOrReference))]
+        ReportingService2005.SetReportHistoryLimitResponse SetReportHistoryLimit(ReportingService2005.SetReportHistoryLimitRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Set" +
+            "ReportHistoryLimit", ReplyAction="*")]
         System.Threading.Tasks.Task<ReportingService2005.SetReportHistoryLimitResponse> SetReportHistoryLimitAsync(ReportingService2005.SetReportHistoryLimitRequest request);
         
-        // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Get" +
             "ReportHistoryLimit", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
@@ -444,8 +667,14 @@ namespace ReportingService2005
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ExpirationDefinition))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RecurrencePattern))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ScheduleDefinitionOrReference))]
+        ReportingService2005.GetReportHistoryLimitResponse GetReportHistoryLimit(ReportingService2005.GetReportHistoryLimitRequest request);
+        
+        // CODEGEN: Generating message contract since the operation has multiple return values.
+        [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Get" +
+            "ReportHistoryLimit", ReplyAction="*")]
         System.Threading.Tasks.Task<ReportingService2005.GetReportHistoryLimitResponse> GetReportHistoryLimitAsync(ReportingService2005.GetReportHistoryLimitRequest request);
         
+        // CODEGEN: Generating message contract since message ListReportHistoryResponse has headers
         [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Lis" +
             "tReportHistory", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
@@ -453,8 +682,13 @@ namespace ReportingService2005
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ExpirationDefinition))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RecurrencePattern))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ScheduleDefinitionOrReference))]
+        ReportingService2005.ListReportHistoryResponse ListReportHistory(ReportingService2005.ListReportHistoryRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Lis" +
+            "tReportHistory", ReplyAction="*")]
         System.Threading.Tasks.Task<ReportingService2005.ListReportHistoryResponse> ListReportHistoryAsync(ReportingService2005.ListReportHistoryRequest request);
         
+        // CODEGEN: Generating message contract since message DeleteReportHistorySnapshotRequest has headers
         [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Del" +
             "eteReportHistorySnapshot", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
@@ -462,8 +696,13 @@ namespace ReportingService2005
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ExpirationDefinition))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RecurrencePattern))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ScheduleDefinitionOrReference))]
+        ReportingService2005.DeleteReportHistorySnapshotResponse DeleteReportHistorySnapshot(ReportingService2005.DeleteReportHistorySnapshotRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Del" +
+            "eteReportHistorySnapshot", ReplyAction="*")]
         System.Threading.Tasks.Task<ReportingService2005.DeleteReportHistorySnapshotResponse> DeleteReportHistorySnapshotAsync(ReportingService2005.DeleteReportHistorySnapshotRequest request);
         
+        // CODEGEN: Generating message contract since message FindItemsResponse has headers
         [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Fin" +
             "dItems", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
@@ -471,8 +710,13 @@ namespace ReportingService2005
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ExpirationDefinition))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RecurrencePattern))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ScheduleDefinitionOrReference))]
+        ReportingService2005.FindItemsResponse FindItems(ReportingService2005.FindItemsRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Fin" +
+            "dItems", ReplyAction="*")]
         System.Threading.Tasks.Task<ReportingService2005.FindItemsResponse> FindItemsAsync(ReportingService2005.FindItemsRequest request);
         
+        // CODEGEN: Generating message contract since message CreateScheduleRequest has headers
         [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Cre" +
             "ateSchedule", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
@@ -480,8 +724,13 @@ namespace ReportingService2005
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ExpirationDefinition))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RecurrencePattern))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ScheduleDefinitionOrReference))]
+        ReportingService2005.CreateScheduleResponse CreateSchedule(ReportingService2005.CreateScheduleRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Cre" +
+            "ateSchedule", ReplyAction="*")]
         System.Threading.Tasks.Task<ReportingService2005.CreateScheduleResponse> CreateScheduleAsync(ReportingService2005.CreateScheduleRequest request);
         
+        // CODEGEN: Generating message contract since message DeleteScheduleRequest has headers
         [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Del" +
             "eteSchedule", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
@@ -489,8 +738,13 @@ namespace ReportingService2005
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ExpirationDefinition))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RecurrencePattern))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ScheduleDefinitionOrReference))]
+        ReportingService2005.DeleteScheduleResponse DeleteSchedule(ReportingService2005.DeleteScheduleRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Del" +
+            "eteSchedule", ReplyAction="*")]
         System.Threading.Tasks.Task<ReportingService2005.DeleteScheduleResponse> DeleteScheduleAsync(ReportingService2005.DeleteScheduleRequest request);
         
+        // CODEGEN: Generating message contract since message SetSchedulePropertiesRequest has headers
         [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Set" +
             "ScheduleProperties", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
@@ -498,8 +752,13 @@ namespace ReportingService2005
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ExpirationDefinition))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RecurrencePattern))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ScheduleDefinitionOrReference))]
+        ReportingService2005.SetSchedulePropertiesResponse SetScheduleProperties(ReportingService2005.SetSchedulePropertiesRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Set" +
+            "ScheduleProperties", ReplyAction="*")]
         System.Threading.Tasks.Task<ReportingService2005.SetSchedulePropertiesResponse> SetSchedulePropertiesAsync(ReportingService2005.SetSchedulePropertiesRequest request);
         
+        // CODEGEN: Generating message contract since message GetSchedulePropertiesResponse has headers
         [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Get" +
             "ScheduleProperties", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
@@ -507,8 +766,13 @@ namespace ReportingService2005
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ExpirationDefinition))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RecurrencePattern))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ScheduleDefinitionOrReference))]
+        ReportingService2005.GetSchedulePropertiesResponse GetScheduleProperties(ReportingService2005.GetSchedulePropertiesRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Get" +
+            "ScheduleProperties", ReplyAction="*")]
         System.Threading.Tasks.Task<ReportingService2005.GetSchedulePropertiesResponse> GetSchedulePropertiesAsync(ReportingService2005.GetSchedulePropertiesRequest request);
         
+        // CODEGEN: Generating message contract since message ListScheduledReportsResponse has headers
         [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Lis" +
             "tScheduledReports", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
@@ -516,8 +780,13 @@ namespace ReportingService2005
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ExpirationDefinition))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RecurrencePattern))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ScheduleDefinitionOrReference))]
+        ReportingService2005.ListScheduledReportsResponse ListScheduledReports(ReportingService2005.ListScheduledReportsRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Lis" +
+            "tScheduledReports", ReplyAction="*")]
         System.Threading.Tasks.Task<ReportingService2005.ListScheduledReportsResponse> ListScheduledReportsAsync(ReportingService2005.ListScheduledReportsRequest request);
         
+        // CODEGEN: Generating message contract since message ListSchedulesResponse has headers
         [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Lis" +
             "tSchedules", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
@@ -525,8 +794,13 @@ namespace ReportingService2005
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ExpirationDefinition))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RecurrencePattern))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ScheduleDefinitionOrReference))]
+        ReportingService2005.ListSchedulesResponse ListSchedules(ReportingService2005.ListSchedulesRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Lis" +
+            "tSchedules", ReplyAction="*")]
         System.Threading.Tasks.Task<ReportingService2005.ListSchedulesResponse> ListSchedulesAsync(ReportingService2005.ListSchedulesRequest request);
         
+        // CODEGEN: Generating message contract since message PauseScheduleRequest has headers
         [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Pau" +
             "seSchedule", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
@@ -534,8 +808,13 @@ namespace ReportingService2005
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ExpirationDefinition))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RecurrencePattern))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ScheduleDefinitionOrReference))]
+        ReportingService2005.PauseScheduleResponse PauseSchedule(ReportingService2005.PauseScheduleRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Pau" +
+            "seSchedule", ReplyAction="*")]
         System.Threading.Tasks.Task<ReportingService2005.PauseScheduleResponse> PauseScheduleAsync(ReportingService2005.PauseScheduleRequest request);
         
+        // CODEGEN: Generating message contract since message ResumeScheduleRequest has headers
         [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Res" +
             "umeSchedule", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
@@ -543,8 +822,13 @@ namespace ReportingService2005
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ExpirationDefinition))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RecurrencePattern))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ScheduleDefinitionOrReference))]
+        ReportingService2005.ResumeScheduleResponse ResumeSchedule(ReportingService2005.ResumeScheduleRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Res" +
+            "umeSchedule", ReplyAction="*")]
         System.Threading.Tasks.Task<ReportingService2005.ResumeScheduleResponse> ResumeScheduleAsync(ReportingService2005.ResumeScheduleRequest request);
         
+        // CODEGEN: Generating message contract since message CreateSubscriptionRequest has headers
         [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Cre" +
             "ateSubscription", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
@@ -552,8 +836,13 @@ namespace ReportingService2005
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ExpirationDefinition))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RecurrencePattern))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ScheduleDefinitionOrReference))]
+        ReportingService2005.CreateSubscriptionResponse CreateSubscription(ReportingService2005.CreateSubscriptionRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Cre" +
+            "ateSubscription", ReplyAction="*")]
         System.Threading.Tasks.Task<ReportingService2005.CreateSubscriptionResponse> CreateSubscriptionAsync(ReportingService2005.CreateSubscriptionRequest request);
         
+        // CODEGEN: Generating message contract since message CreateDataDrivenSubscriptionRequest has headers
         [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Cre" +
             "ateDataDrivenSubscription", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
@@ -561,8 +850,13 @@ namespace ReportingService2005
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ExpirationDefinition))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RecurrencePattern))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ScheduleDefinitionOrReference))]
+        ReportingService2005.CreateDataDrivenSubscriptionResponse CreateDataDrivenSubscription(ReportingService2005.CreateDataDrivenSubscriptionRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Cre" +
+            "ateDataDrivenSubscription", ReplyAction="*")]
         System.Threading.Tasks.Task<ReportingService2005.CreateDataDrivenSubscriptionResponse> CreateDataDrivenSubscriptionAsync(ReportingService2005.CreateDataDrivenSubscriptionRequest request);
         
+        // CODEGEN: Generating message contract since message SetSubscriptionPropertiesRequest has headers
         [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Set" +
             "SubscriptionProperties", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
@@ -570,8 +864,13 @@ namespace ReportingService2005
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ExpirationDefinition))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RecurrencePattern))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ScheduleDefinitionOrReference))]
+        ReportingService2005.SetSubscriptionPropertiesResponse SetSubscriptionProperties(ReportingService2005.SetSubscriptionPropertiesRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Set" +
+            "SubscriptionProperties", ReplyAction="*")]
         System.Threading.Tasks.Task<ReportingService2005.SetSubscriptionPropertiesResponse> SetSubscriptionPropertiesAsync(ReportingService2005.SetSubscriptionPropertiesRequest request);
         
+        // CODEGEN: Generating message contract since message SetDataDrivenSubscriptionPropertiesRequest has headers
         [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Set" +
             "DataDrivenSubscriptionProperties", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
@@ -579,9 +878,12 @@ namespace ReportingService2005
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ExpirationDefinition))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RecurrencePattern))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ScheduleDefinitionOrReference))]
+        ReportingService2005.SetDataDrivenSubscriptionPropertiesResponse SetDataDrivenSubscriptionProperties(ReportingService2005.SetDataDrivenSubscriptionPropertiesRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Set" +
+            "DataDrivenSubscriptionProperties", ReplyAction="*")]
         System.Threading.Tasks.Task<ReportingService2005.SetDataDrivenSubscriptionPropertiesResponse> SetDataDrivenSubscriptionPropertiesAsync(ReportingService2005.SetDataDrivenSubscriptionPropertiesRequest request);
         
-        // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Get" +
             "SubscriptionProperties", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
@@ -589,9 +891,13 @@ namespace ReportingService2005
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ExpirationDefinition))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RecurrencePattern))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ScheduleDefinitionOrReference))]
-        System.Threading.Tasks.Task<ReportingService2005.GetSubscriptionPropertiesResponse> GetSubscriptionPropertiesAsync(ReportingService2005.GetSubscriptionPropertiesRequest request);
+        ReportingService2005.GetSubscriptionPropertiesResponse GetSubscriptionProperties(ReportingService2005.GetSubscriptionPropertiesRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
+        [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Get" +
+            "SubscriptionProperties", ReplyAction="*")]
+        System.Threading.Tasks.Task<ReportingService2005.GetSubscriptionPropertiesResponse> GetSubscriptionPropertiesAsync(ReportingService2005.GetSubscriptionPropertiesRequest request);
+        
         [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Get" +
             "DataDrivenSubscriptionProperties", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
@@ -599,8 +905,14 @@ namespace ReportingService2005
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ExpirationDefinition))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RecurrencePattern))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ScheduleDefinitionOrReference))]
+        ReportingService2005.GetDataDrivenSubscriptionPropertiesResponse GetDataDrivenSubscriptionProperties(ReportingService2005.GetDataDrivenSubscriptionPropertiesRequest request);
+        
+        // CODEGEN: Generating message contract since the operation has multiple return values.
+        [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Get" +
+            "DataDrivenSubscriptionProperties", ReplyAction="*")]
         System.Threading.Tasks.Task<ReportingService2005.GetDataDrivenSubscriptionPropertiesResponse> GetDataDrivenSubscriptionPropertiesAsync(ReportingService2005.GetDataDrivenSubscriptionPropertiesRequest request);
         
+        // CODEGEN: Generating message contract since message DeleteSubscriptionRequest has headers
         [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Del" +
             "eteSubscription", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
@@ -608,9 +920,12 @@ namespace ReportingService2005
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ExpirationDefinition))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RecurrencePattern))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ScheduleDefinitionOrReference))]
+        ReportingService2005.DeleteSubscriptionResponse DeleteSubscription(ReportingService2005.DeleteSubscriptionRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Del" +
+            "eteSubscription", ReplyAction="*")]
         System.Threading.Tasks.Task<ReportingService2005.DeleteSubscriptionResponse> DeleteSubscriptionAsync(ReportingService2005.DeleteSubscriptionRequest request);
         
-        // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Pre" +
             "pareQuery", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
@@ -618,8 +933,14 @@ namespace ReportingService2005
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ExpirationDefinition))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RecurrencePattern))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ScheduleDefinitionOrReference))]
+        ReportingService2005.PrepareQueryResponse PrepareQuery(ReportingService2005.PrepareQueryRequest request);
+        
+        // CODEGEN: Generating message contract since the operation has multiple return values.
+        [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Pre" +
+            "pareQuery", ReplyAction="*")]
         System.Threading.Tasks.Task<ReportingService2005.PrepareQueryResponse> PrepareQueryAsync(ReportingService2005.PrepareQueryRequest request);
         
+        // CODEGEN: Generating message contract since message GetExtensionSettingsResponse has headers
         [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Get" +
             "ExtensionSettings", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
@@ -627,8 +948,13 @@ namespace ReportingService2005
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ExpirationDefinition))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RecurrencePattern))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ScheduleDefinitionOrReference))]
+        ReportingService2005.GetExtensionSettingsResponse GetExtensionSettings(ReportingService2005.GetExtensionSettingsRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Get" +
+            "ExtensionSettings", ReplyAction="*")]
         System.Threading.Tasks.Task<ReportingService2005.GetExtensionSettingsResponse> GetExtensionSettingsAsync(ReportingService2005.GetExtensionSettingsRequest request);
         
+        // CODEGEN: Generating message contract since message ValidateExtensionSettingsResponse has headers
         [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Val" +
             "idateExtensionSettings", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
@@ -636,8 +962,13 @@ namespace ReportingService2005
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ExpirationDefinition))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RecurrencePattern))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ScheduleDefinitionOrReference))]
+        ReportingService2005.ValidateExtensionSettingsResponse ValidateExtensionSettings(ReportingService2005.ValidateExtensionSettingsRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Val" +
+            "idateExtensionSettings", ReplyAction="*")]
         System.Threading.Tasks.Task<ReportingService2005.ValidateExtensionSettingsResponse> ValidateExtensionSettingsAsync(ReportingService2005.ValidateExtensionSettingsRequest request);
         
+        // CODEGEN: Generating message contract since message ListSubscriptionsResponse has headers
         [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Lis" +
             "tSubscriptions", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
@@ -645,8 +976,13 @@ namespace ReportingService2005
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ExpirationDefinition))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RecurrencePattern))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ScheduleDefinitionOrReference))]
+        ReportingService2005.ListSubscriptionsResponse ListSubscriptions(ReportingService2005.ListSubscriptionsRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Lis" +
+            "tSubscriptions", ReplyAction="*")]
         System.Threading.Tasks.Task<ReportingService2005.ListSubscriptionsResponse> ListSubscriptionsAsync(ReportingService2005.ListSubscriptionsRequest request);
         
+        // CODEGEN: Generating message contract since message ListSubscriptionsUsingDataSourceResponse has headers
         [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Lis" +
             "tSubscriptionsUsingDataSource", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
@@ -654,8 +990,13 @@ namespace ReportingService2005
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ExpirationDefinition))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RecurrencePattern))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ScheduleDefinitionOrReference))]
+        ReportingService2005.ListSubscriptionsUsingDataSourceResponse ListSubscriptionsUsingDataSource(ReportingService2005.ListSubscriptionsUsingDataSourceRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Lis" +
+            "tSubscriptionsUsingDataSource", ReplyAction="*")]
         System.Threading.Tasks.Task<ReportingService2005.ListSubscriptionsUsingDataSourceResponse> ListSubscriptionsUsingDataSourceAsync(ReportingService2005.ListSubscriptionsUsingDataSourceRequest request);
         
+        // CODEGEN: Generating message contract since message ListExtensionsResponse has headers
         [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Lis" +
             "tExtensions", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
@@ -663,8 +1004,13 @@ namespace ReportingService2005
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ExpirationDefinition))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RecurrencePattern))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ScheduleDefinitionOrReference))]
+        ReportingService2005.ListExtensionsResponse ListExtensions(ReportingService2005.ListExtensionsRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Lis" +
+            "tExtensions", ReplyAction="*")]
         System.Threading.Tasks.Task<ReportingService2005.ListExtensionsResponse> ListExtensionsAsync(ReportingService2005.ListExtensionsRequest request);
         
+        // CODEGEN: Generating message contract since message ListEventsResponse has headers
         [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Lis" +
             "tEvents", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
@@ -672,8 +1018,13 @@ namespace ReportingService2005
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ExpirationDefinition))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RecurrencePattern))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ScheduleDefinitionOrReference))]
+        ReportingService2005.ListEventsResponse ListEvents(ReportingService2005.ListEventsRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Lis" +
+            "tEvents", ReplyAction="*")]
         System.Threading.Tasks.Task<ReportingService2005.ListEventsResponse> ListEventsAsync(ReportingService2005.ListEventsRequest request);
         
+        // CODEGEN: Generating message contract since message FireEventRequest has headers
         [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Fir" +
             "eEvent", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
@@ -681,8 +1032,13 @@ namespace ReportingService2005
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ExpirationDefinition))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RecurrencePattern))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ScheduleDefinitionOrReference))]
+        ReportingService2005.FireEventResponse FireEvent(ReportingService2005.FireEventRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Fir" +
+            "eEvent", ReplyAction="*")]
         System.Threading.Tasks.Task<ReportingService2005.FireEventResponse> FireEventAsync(ReportingService2005.FireEventRequest request);
         
+        // CODEGEN: Generating message contract since message ListTasksResponse has headers
         [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Lis" +
             "tTasks", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
@@ -690,8 +1046,13 @@ namespace ReportingService2005
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ExpirationDefinition))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RecurrencePattern))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ScheduleDefinitionOrReference))]
+        ReportingService2005.ListTasksResponse ListTasks(ReportingService2005.ListTasksRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Lis" +
+            "tTasks", ReplyAction="*")]
         System.Threading.Tasks.Task<ReportingService2005.ListTasksResponse> ListTasksAsync(ReportingService2005.ListTasksRequest request);
         
+        // CODEGEN: Generating message contract since message ListRolesResponse has headers
         [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Lis" +
             "tRoles", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
@@ -699,8 +1060,13 @@ namespace ReportingService2005
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ExpirationDefinition))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RecurrencePattern))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ScheduleDefinitionOrReference))]
+        ReportingService2005.ListRolesResponse ListRoles(ReportingService2005.ListRolesRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Lis" +
+            "tRoles", ReplyAction="*")]
         System.Threading.Tasks.Task<ReportingService2005.ListRolesResponse> ListRolesAsync(ReportingService2005.ListRolesRequest request);
         
+        // CODEGEN: Generating message contract since message CreateRoleRequest has headers
         [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Cre" +
             "ateRole", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
@@ -708,8 +1074,13 @@ namespace ReportingService2005
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ExpirationDefinition))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RecurrencePattern))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ScheduleDefinitionOrReference))]
+        ReportingService2005.CreateRoleResponse CreateRole(ReportingService2005.CreateRoleRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Cre" +
+            "ateRole", ReplyAction="*")]
         System.Threading.Tasks.Task<ReportingService2005.CreateRoleResponse> CreateRoleAsync(ReportingService2005.CreateRoleRequest request);
         
+        // CODEGEN: Generating message contract since message DeleteRoleRequest has headers
         [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Del" +
             "eteRole", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
@@ -717,9 +1088,12 @@ namespace ReportingService2005
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ExpirationDefinition))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RecurrencePattern))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ScheduleDefinitionOrReference))]
+        ReportingService2005.DeleteRoleResponse DeleteRole(ReportingService2005.DeleteRoleRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Del" +
+            "eteRole", ReplyAction="*")]
         System.Threading.Tasks.Task<ReportingService2005.DeleteRoleResponse> DeleteRoleAsync(ReportingService2005.DeleteRoleRequest request);
         
-        // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Get" +
             "RoleProperties", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
@@ -727,8 +1101,14 @@ namespace ReportingService2005
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ExpirationDefinition))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RecurrencePattern))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ScheduleDefinitionOrReference))]
+        ReportingService2005.GetRolePropertiesResponse GetRoleProperties(ReportingService2005.GetRolePropertiesRequest request);
+        
+        // CODEGEN: Generating message contract since the operation has multiple return values.
+        [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Get" +
+            "RoleProperties", ReplyAction="*")]
         System.Threading.Tasks.Task<ReportingService2005.GetRolePropertiesResponse> GetRolePropertiesAsync(ReportingService2005.GetRolePropertiesRequest request);
         
+        // CODEGEN: Generating message contract since message SetRolePropertiesRequest has headers
         [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Set" +
             "RoleProperties", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
@@ -736,8 +1116,13 @@ namespace ReportingService2005
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ExpirationDefinition))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RecurrencePattern))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ScheduleDefinitionOrReference))]
+        ReportingService2005.SetRolePropertiesResponse SetRoleProperties(ReportingService2005.SetRolePropertiesRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Set" +
+            "RoleProperties", ReplyAction="*")]
         System.Threading.Tasks.Task<ReportingService2005.SetRolePropertiesResponse> SetRolePropertiesAsync(ReportingService2005.SetRolePropertiesRequest request);
         
+        // CODEGEN: Generating message contract since message GetSystemPoliciesResponse has headers
         [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Get" +
             "SystemPolicies", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
@@ -745,8 +1130,13 @@ namespace ReportingService2005
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ExpirationDefinition))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RecurrencePattern))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ScheduleDefinitionOrReference))]
+        ReportingService2005.GetSystemPoliciesResponse GetSystemPolicies(ReportingService2005.GetSystemPoliciesRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Get" +
+            "SystemPolicies", ReplyAction="*")]
         System.Threading.Tasks.Task<ReportingService2005.GetSystemPoliciesResponse> GetSystemPoliciesAsync(ReportingService2005.GetSystemPoliciesRequest request);
         
+        // CODEGEN: Generating message contract since message SetSystemPoliciesRequest has headers
         [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Set" +
             "SystemPolicies", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
@@ -754,18 +1144,27 @@ namespace ReportingService2005
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ExpirationDefinition))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RecurrencePattern))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ScheduleDefinitionOrReference))]
+        ReportingService2005.SetSystemPoliciesResponse SetSystemPolicies(ReportingService2005.SetSystemPoliciesRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Set" +
+            "SystemPolicies", ReplyAction="*")]
         System.Threading.Tasks.Task<ReportingService2005.SetSystemPoliciesResponse> SetSystemPoliciesAsync(ReportingService2005.SetSystemPoliciesRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Get" +
+            "Policies", ReplyAction="*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataSourceDefinitionOrReference))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ExpirationDefinition))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RecurrencePattern))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ScheduleDefinitionOrReference))]
+        ReportingService2005.GetPoliciesResponse GetPolicies(ReportingService2005.GetPoliciesRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Get" +
             "Policies", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataSourceDefinitionOrReference))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ExpirationDefinition))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RecurrencePattern))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ScheduleDefinitionOrReference))]
         System.Threading.Tasks.Task<ReportingService2005.GetPoliciesResponse> GetPoliciesAsync(ReportingService2005.GetPoliciesRequest request);
         
+        // CODEGEN: Generating message contract since message SetPoliciesRequest has headers
         [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Set" +
             "Policies", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
@@ -773,8 +1172,13 @@ namespace ReportingService2005
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ExpirationDefinition))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RecurrencePattern))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ScheduleDefinitionOrReference))]
+        ReportingService2005.SetPoliciesResponse SetPolicies(ReportingService2005.SetPoliciesRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Set" +
+            "Policies", ReplyAction="*")]
         System.Threading.Tasks.Task<ReportingService2005.SetPoliciesResponse> SetPoliciesAsync(ReportingService2005.SetPoliciesRequest request);
         
+        // CODEGEN: Generating message contract since message InheritParentSecurityRequest has headers
         [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Inh" +
             "eritParentSecurity", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
@@ -782,8 +1186,13 @@ namespace ReportingService2005
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ExpirationDefinition))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RecurrencePattern))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ScheduleDefinitionOrReference))]
+        ReportingService2005.InheritParentSecurityResponse InheritParentSecurity(ReportingService2005.InheritParentSecurityRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Inh" +
+            "eritParentSecurity", ReplyAction="*")]
         System.Threading.Tasks.Task<ReportingService2005.InheritParentSecurityResponse> InheritParentSecurityAsync(ReportingService2005.InheritParentSecurityRequest request);
         
+        // CODEGEN: Generating message contract since message GetSystemPermissionsResponse has headers
         [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Get" +
             "SystemPermissions", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
@@ -791,8 +1200,13 @@ namespace ReportingService2005
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ExpirationDefinition))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RecurrencePattern))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ScheduleDefinitionOrReference))]
+        ReportingService2005.GetSystemPermissionsResponse GetSystemPermissions(ReportingService2005.GetSystemPermissionsRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Get" +
+            "SystemPermissions", ReplyAction="*")]
         System.Threading.Tasks.Task<ReportingService2005.GetSystemPermissionsResponse> GetSystemPermissionsAsync(ReportingService2005.GetSystemPermissionsRequest request);
         
+        // CODEGEN: Generating message contract since message GetPermissionsResponse has headers
         [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Get" +
             "Permissions", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
@@ -800,8 +1214,13 @@ namespace ReportingService2005
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ExpirationDefinition))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RecurrencePattern))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ScheduleDefinitionOrReference))]
+        ReportingService2005.GetPermissionsResponse GetPermissions(ReportingService2005.GetPermissionsRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Get" +
+            "Permissions", ReplyAction="*")]
         System.Threading.Tasks.Task<ReportingService2005.GetPermissionsResponse> GetPermissionsAsync(ReportingService2005.GetPermissionsRequest request);
         
+        // CODEGEN: Generating message contract since message LogonUserResponse has headers
         [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Log" +
             "onUser", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
@@ -809,8 +1228,13 @@ namespace ReportingService2005
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ExpirationDefinition))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RecurrencePattern))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ScheduleDefinitionOrReference))]
+        ReportingService2005.LogonUserResponse LogonUser(ReportingService2005.LogonUserRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Log" +
+            "onUser", ReplyAction="*")]
         System.Threading.Tasks.Task<ReportingService2005.LogonUserResponse> LogonUserAsync(ReportingService2005.LogonUserRequest request);
         
+        // CODEGEN: Generating message contract since message LogoffResponse has headers
         [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Log" +
             "off", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
@@ -818,8 +1242,13 @@ namespace ReportingService2005
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ExpirationDefinition))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RecurrencePattern))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ScheduleDefinitionOrReference))]
+        ReportingService2005.LogoffResponse Logoff(ReportingService2005.LogoffRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Log" +
+            "off", ReplyAction="*")]
         System.Threading.Tasks.Task<ReportingService2005.LogoffResponse> LogoffAsync(ReportingService2005.LogoffRequest request);
         
+        // CODEGEN: Generating message contract since message CreateModelRequest has headers
         [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Cre" +
             "ateModel", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
@@ -827,8 +1256,13 @@ namespace ReportingService2005
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ExpirationDefinition))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RecurrencePattern))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ScheduleDefinitionOrReference))]
+        ReportingService2005.CreateModelResponse CreateModel(ReportingService2005.CreateModelRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Cre" +
+            "ateModel", ReplyAction="*")]
         System.Threading.Tasks.Task<ReportingService2005.CreateModelResponse> CreateModelAsync(ReportingService2005.CreateModelRequest request);
         
+        // CODEGEN: Generating message contract since message GetModelDefinitionResponse has headers
         [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Get" +
             "ModelDefinition", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
@@ -836,8 +1270,13 @@ namespace ReportingService2005
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ExpirationDefinition))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RecurrencePattern))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ScheduleDefinitionOrReference))]
+        ReportingService2005.GetModelDefinitionResponse GetModelDefinition(ReportingService2005.GetModelDefinitionRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Get" +
+            "ModelDefinition", ReplyAction="*")]
         System.Threading.Tasks.Task<ReportingService2005.GetModelDefinitionResponse> GetModelDefinitionAsync(ReportingService2005.GetModelDefinitionRequest request);
         
+        // CODEGEN: Generating message contract since message SetModelDefinitionRequest has headers
         [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Set" +
             "ModelDefinition", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
@@ -845,8 +1284,13 @@ namespace ReportingService2005
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ExpirationDefinition))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RecurrencePattern))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ScheduleDefinitionOrReference))]
+        ReportingService2005.SetModelDefinitionResponse SetModelDefinition(ReportingService2005.SetModelDefinitionRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Set" +
+            "ModelDefinition", ReplyAction="*")]
         System.Threading.Tasks.Task<ReportingService2005.SetModelDefinitionResponse> SetModelDefinitionAsync(ReportingService2005.SetModelDefinitionRequest request);
         
+        // CODEGEN: Generating message contract since message ListModelPerspectivesResponse has headers
         [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Lis" +
             "tModelPerspectives", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
@@ -854,8 +1298,13 @@ namespace ReportingService2005
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ExpirationDefinition))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RecurrencePattern))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ScheduleDefinitionOrReference))]
+        ReportingService2005.ListModelPerspectivesResponse ListModelPerspectives(ReportingService2005.ListModelPerspectivesRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Lis" +
+            "tModelPerspectives", ReplyAction="*")]
         System.Threading.Tasks.Task<ReportingService2005.ListModelPerspectivesResponse> ListModelPerspectivesAsync(ReportingService2005.ListModelPerspectivesRequest request);
         
+        // CODEGEN: Generating message contract since message GetUserModelResponse has headers
         [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Get" +
             "UserModel", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
@@ -863,8 +1312,13 @@ namespace ReportingService2005
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ExpirationDefinition))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RecurrencePattern))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ScheduleDefinitionOrReference))]
+        ReportingService2005.GetUserModelResponse GetUserModel(ReportingService2005.GetUserModelRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Get" +
+            "UserModel", ReplyAction="*")]
         System.Threading.Tasks.Task<ReportingService2005.GetUserModelResponse> GetUserModelAsync(ReportingService2005.GetUserModelRequest request);
         
+        // CODEGEN: Generating message contract since message ListModelItemChildrenResponse has headers
         [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Lis" +
             "tModelItemChildren", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
@@ -872,8 +1326,13 @@ namespace ReportingService2005
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ExpirationDefinition))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RecurrencePattern))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ScheduleDefinitionOrReference))]
+        ReportingService2005.ListModelItemChildrenResponse ListModelItemChildren(ReportingService2005.ListModelItemChildrenRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Lis" +
+            "tModelItemChildren", ReplyAction="*")]
         System.Threading.Tasks.Task<ReportingService2005.ListModelItemChildrenResponse> ListModelItemChildrenAsync(ReportingService2005.ListModelItemChildrenRequest request);
         
+        // CODEGEN: Generating message contract since message GetModelItemPermissionsResponse has headers
         [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Get" +
             "ModelItemPermissions", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
@@ -881,9 +1340,12 @@ namespace ReportingService2005
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ExpirationDefinition))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RecurrencePattern))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ScheduleDefinitionOrReference))]
+        ReportingService2005.GetModelItemPermissionsResponse GetModelItemPermissions(ReportingService2005.GetModelItemPermissionsRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Get" +
+            "ModelItemPermissions", ReplyAction="*")]
         System.Threading.Tasks.Task<ReportingService2005.GetModelItemPermissionsResponse> GetModelItemPermissionsAsync(ReportingService2005.GetModelItemPermissionsRequest request);
         
-        // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Get" +
             "ModelItemPolicies", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
@@ -891,8 +1353,14 @@ namespace ReportingService2005
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ExpirationDefinition))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RecurrencePattern))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ScheduleDefinitionOrReference))]
+        ReportingService2005.GetModelItemPoliciesResponse GetModelItemPolicies(ReportingService2005.GetModelItemPoliciesRequest request);
+        
+        // CODEGEN: Generating message contract since the operation has multiple return values.
+        [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Get" +
+            "ModelItemPolicies", ReplyAction="*")]
         System.Threading.Tasks.Task<ReportingService2005.GetModelItemPoliciesResponse> GetModelItemPoliciesAsync(ReportingService2005.GetModelItemPoliciesRequest request);
         
+        // CODEGEN: Generating message contract since message SetModelItemPoliciesRequest has headers
         [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Set" +
             "ModelItemPolicies", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
@@ -900,8 +1368,13 @@ namespace ReportingService2005
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ExpirationDefinition))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RecurrencePattern))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ScheduleDefinitionOrReference))]
+        ReportingService2005.SetModelItemPoliciesResponse SetModelItemPolicies(ReportingService2005.SetModelItemPoliciesRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Set" +
+            "ModelItemPolicies", ReplyAction="*")]
         System.Threading.Tasks.Task<ReportingService2005.SetModelItemPoliciesResponse> SetModelItemPoliciesAsync(ReportingService2005.SetModelItemPoliciesRequest request);
         
+        // CODEGEN: Generating message contract since message InheritModelItemParentSecurityRequest has headers
         [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Inh" +
             "eritModelItemParentSecurity", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
@@ -909,8 +1382,13 @@ namespace ReportingService2005
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ExpirationDefinition))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RecurrencePattern))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ScheduleDefinitionOrReference))]
+        ReportingService2005.InheritModelItemParentSecurityResponse InheritModelItemParentSecurity(ReportingService2005.InheritModelItemParentSecurityRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Inh" +
+            "eritModelItemParentSecurity", ReplyAction="*")]
         System.Threading.Tasks.Task<ReportingService2005.InheritModelItemParentSecurityResponse> InheritModelItemParentSecurityAsync(ReportingService2005.InheritModelItemParentSecurityRequest request);
         
+        // CODEGEN: Generating message contract since message RemoveAllModelItemPoliciesRequest has headers
         [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Rem" +
             "oveAllModelItemPolicies", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
@@ -918,8 +1396,13 @@ namespace ReportingService2005
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ExpirationDefinition))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RecurrencePattern))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ScheduleDefinitionOrReference))]
+        ReportingService2005.RemoveAllModelItemPoliciesResponse RemoveAllModelItemPolicies(ReportingService2005.RemoveAllModelItemPoliciesRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Rem" +
+            "oveAllModelItemPolicies", ReplyAction="*")]
         System.Threading.Tasks.Task<ReportingService2005.RemoveAllModelItemPoliciesResponse> RemoveAllModelItemPoliciesAsync(ReportingService2005.RemoveAllModelItemPoliciesRequest request);
         
+        // CODEGEN: Generating message contract since message SetModelDrillthroughReportsRequest has headers
         [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Set" +
             "ModelDrillthroughReports", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
@@ -927,8 +1410,13 @@ namespace ReportingService2005
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ExpirationDefinition))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RecurrencePattern))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ScheduleDefinitionOrReference))]
+        ReportingService2005.SetModelDrillthroughReportsResponse SetModelDrillthroughReports(ReportingService2005.SetModelDrillthroughReportsRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Set" +
+            "ModelDrillthroughReports", ReplyAction="*")]
         System.Threading.Tasks.Task<ReportingService2005.SetModelDrillthroughReportsResponse> SetModelDrillthroughReportsAsync(ReportingService2005.SetModelDrillthroughReportsRequest request);
         
+        // CODEGEN: Generating message contract since message ListModelDrillthroughReportsResponse has headers
         [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Lis" +
             "tModelDrillthroughReports", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
@@ -936,8 +1424,13 @@ namespace ReportingService2005
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ExpirationDefinition))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RecurrencePattern))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ScheduleDefinitionOrReference))]
+        ReportingService2005.ListModelDrillthroughReportsResponse ListModelDrillthroughReports(ReportingService2005.ListModelDrillthroughReportsRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Lis" +
+            "tModelDrillthroughReports", ReplyAction="*")]
         System.Threading.Tasks.Task<ReportingService2005.ListModelDrillthroughReportsResponse> ListModelDrillthroughReportsAsync(ReportingService2005.ListModelDrillthroughReportsRequest request);
         
+        // CODEGEN: Generating message contract since message GenerateModelRequest has headers
         [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Gen" +
             "erateModel", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
@@ -945,8 +1438,13 @@ namespace ReportingService2005
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ExpirationDefinition))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RecurrencePattern))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ScheduleDefinitionOrReference))]
+        ReportingService2005.GenerateModelResponse GenerateModel(ReportingService2005.GenerateModelRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Gen" +
+            "erateModel", ReplyAction="*")]
         System.Threading.Tasks.Task<ReportingService2005.GenerateModelResponse> GenerateModelAsync(ReportingService2005.GenerateModelRequest request);
         
+        // CODEGEN: Generating message contract since message RegenerateModelRequest has headers
         [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Reg" +
             "enerateModel", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
@@ -954,6 +1452,10 @@ namespace ReportingService2005
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ExpirationDefinition))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RecurrencePattern))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ScheduleDefinitionOrReference))]
+        ReportingService2005.RegenerateModelResponse RegenerateModel(ReportingService2005.RegenerateModelRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices/Reg" +
+            "enerateModel", ReplyAction="*")]
         System.Threading.Tasks.Task<ReportingService2005.RegenerateModelResponse> RegenerateModelAsync(ReportingService2005.RegenerateModelRequest request);
     }
     
@@ -10546,6 +11048,20 @@ namespace ReportingService2005
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        ReportingService2005.ListSecureMethodsResponse ReportingService2005.ReportingService2005Soap.ListSecureMethods(ReportingService2005.ListSecureMethodsRequest request)
+        {
+            return base.Channel.ListSecureMethods(request);
+        }
+        
+        public ReportingService2005.ServerInfoHeader ListSecureMethods(out string[] ListSecureMethodsResult)
+        {
+            ReportingService2005.ListSecureMethodsRequest inValue = new ReportingService2005.ListSecureMethodsRequest();
+            ReportingService2005.ListSecureMethodsResponse retVal = ((ReportingService2005.ReportingService2005Soap)(this)).ListSecureMethods(inValue);
+            ListSecureMethodsResult = retVal.ListSecureMethodsResult;
+            return retVal.ServerInfoHeader;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<ReportingService2005.ListSecureMethodsResponse> ReportingService2005.ReportingService2005Soap.ListSecureMethodsAsync(ReportingService2005.ListSecureMethodsRequest request)
         {
             return base.Channel.ListSecureMethodsAsync(request);
@@ -10558,6 +11074,20 @@ namespace ReportingService2005
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        ReportingService2005.CreateBatchResponse ReportingService2005.ReportingService2005Soap.CreateBatch(ReportingService2005.CreateBatchRequest request)
+        {
+            return base.Channel.CreateBatch(request);
+        }
+        
+        public ReportingService2005.ServerInfoHeader CreateBatch(out string BatchID)
+        {
+            ReportingService2005.CreateBatchRequest inValue = new ReportingService2005.CreateBatchRequest();
+            ReportingService2005.CreateBatchResponse retVal = ((ReportingService2005.ReportingService2005Soap)(this)).CreateBatch(inValue);
+            BatchID = retVal.BatchID;
+            return retVal.ServerInfoHeader;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<ReportingService2005.CreateBatchResponse> ReportingService2005.ReportingService2005Soap.CreateBatchAsync(ReportingService2005.CreateBatchRequest request)
         {
             return base.Channel.CreateBatchAsync(request);
@@ -10567,6 +11097,20 @@ namespace ReportingService2005
         {
             ReportingService2005.CreateBatchRequest inValue = new ReportingService2005.CreateBatchRequest();
             return ((ReportingService2005.ReportingService2005Soap)(this)).CreateBatchAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        ReportingService2005.CancelBatchResponse ReportingService2005.ReportingService2005Soap.CancelBatch(ReportingService2005.CancelBatchRequest request)
+        {
+            return base.Channel.CancelBatch(request);
+        }
+        
+        public ReportingService2005.ServerInfoHeader CancelBatch(ReportingService2005.BatchHeader BatchHeader)
+        {
+            ReportingService2005.CancelBatchRequest inValue = new ReportingService2005.CancelBatchRequest();
+            inValue.BatchHeader = BatchHeader;
+            ReportingService2005.CancelBatchResponse retVal = ((ReportingService2005.ReportingService2005Soap)(this)).CancelBatch(inValue);
+            return retVal.ServerInfoHeader;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -10583,6 +11127,20 @@ namespace ReportingService2005
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        ReportingService2005.ExecuteBatchResponse ReportingService2005.ReportingService2005Soap.ExecuteBatch(ReportingService2005.ExecuteBatchRequest request)
+        {
+            return base.Channel.ExecuteBatch(request);
+        }
+        
+        public ReportingService2005.ServerInfoHeader ExecuteBatch(ReportingService2005.BatchHeader BatchHeader)
+        {
+            ReportingService2005.ExecuteBatchRequest inValue = new ReportingService2005.ExecuteBatchRequest();
+            inValue.BatchHeader = BatchHeader;
+            ReportingService2005.ExecuteBatchResponse retVal = ((ReportingService2005.ReportingService2005Soap)(this)).ExecuteBatch(inValue);
+            return retVal.ServerInfoHeader;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<ReportingService2005.ExecuteBatchResponse> ReportingService2005.ReportingService2005Soap.ExecuteBatchAsync(ReportingService2005.ExecuteBatchRequest request)
         {
             return base.Channel.ExecuteBatchAsync(request);
@@ -10593,6 +11151,21 @@ namespace ReportingService2005
             ReportingService2005.ExecuteBatchRequest inValue = new ReportingService2005.ExecuteBatchRequest();
             inValue.BatchHeader = BatchHeader;
             return ((ReportingService2005.ReportingService2005Soap)(this)).ExecuteBatchAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        ReportingService2005.GetSystemPropertiesResponse ReportingService2005.ReportingService2005Soap.GetSystemProperties(ReportingService2005.GetSystemPropertiesRequest request)
+        {
+            return base.Channel.GetSystemProperties(request);
+        }
+        
+        public ReportingService2005.ServerInfoHeader GetSystemProperties(ReportingService2005.Property[] Properties, out ReportingService2005.Property[] Values)
+        {
+            ReportingService2005.GetSystemPropertiesRequest inValue = new ReportingService2005.GetSystemPropertiesRequest();
+            inValue.Properties = Properties;
+            ReportingService2005.GetSystemPropertiesResponse retVal = ((ReportingService2005.ReportingService2005Soap)(this)).GetSystemProperties(inValue);
+            Values = retVal.Values;
+            return retVal.ServerInfoHeader;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -10609,6 +11182,20 @@ namespace ReportingService2005
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        ReportingService2005.SetSystemPropertiesResponse ReportingService2005.ReportingService2005Soap.SetSystemProperties(ReportingService2005.SetSystemPropertiesRequest request)
+        {
+            return base.Channel.SetSystemProperties(request);
+        }
+        
+        public ReportingService2005.ServerInfoHeader SetSystemProperties(ReportingService2005.Property[] Properties)
+        {
+            ReportingService2005.SetSystemPropertiesRequest inValue = new ReportingService2005.SetSystemPropertiesRequest();
+            inValue.Properties = Properties;
+            ReportingService2005.SetSystemPropertiesResponse retVal = ((ReportingService2005.ReportingService2005Soap)(this)).SetSystemProperties(inValue);
+            return retVal.ServerInfoHeader;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<ReportingService2005.SetSystemPropertiesResponse> ReportingService2005.ReportingService2005Soap.SetSystemPropertiesAsync(ReportingService2005.SetSystemPropertiesRequest request)
         {
             return base.Channel.SetSystemPropertiesAsync(request);
@@ -10619,6 +11206,21 @@ namespace ReportingService2005
             ReportingService2005.SetSystemPropertiesRequest inValue = new ReportingService2005.SetSystemPropertiesRequest();
             inValue.Properties = Properties;
             return ((ReportingService2005.ReportingService2005Soap)(this)).SetSystemPropertiesAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        ReportingService2005.DeleteItemResponse ReportingService2005.ReportingService2005Soap.DeleteItem(ReportingService2005.DeleteItemRequest request)
+        {
+            return base.Channel.DeleteItem(request);
+        }
+        
+        public ReportingService2005.ServerInfoHeader DeleteItem(ReportingService2005.BatchHeader BatchHeader, string Item)
+        {
+            ReportingService2005.DeleteItemRequest inValue = new ReportingService2005.DeleteItemRequest();
+            inValue.BatchHeader = BatchHeader;
+            inValue.Item = Item;
+            ReportingService2005.DeleteItemResponse retVal = ((ReportingService2005.ReportingService2005Soap)(this)).DeleteItem(inValue);
+            return retVal.ServerInfoHeader;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -10633,6 +11235,22 @@ namespace ReportingService2005
             inValue.BatchHeader = BatchHeader;
             inValue.Item = Item;
             return ((ReportingService2005.ReportingService2005Soap)(this)).DeleteItemAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        ReportingService2005.MoveItemResponse ReportingService2005.ReportingService2005Soap.MoveItem(ReportingService2005.MoveItemRequest request)
+        {
+            return base.Channel.MoveItem(request);
+        }
+        
+        public ReportingService2005.ServerInfoHeader MoveItem(ReportingService2005.BatchHeader BatchHeader, string Item, string Target)
+        {
+            ReportingService2005.MoveItemRequest inValue = new ReportingService2005.MoveItemRequest();
+            inValue.BatchHeader = BatchHeader;
+            inValue.Item = Item;
+            inValue.Target = Target;
+            ReportingService2005.MoveItemResponse retVal = ((ReportingService2005.ReportingService2005Soap)(this)).MoveItem(inValue);
+            return retVal.ServerInfoHeader;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -10651,6 +11269,22 @@ namespace ReportingService2005
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        ReportingService2005.ListChildrenResponse ReportingService2005.ReportingService2005Soap.ListChildren(ReportingService2005.ListChildrenRequest request)
+        {
+            return base.Channel.ListChildren(request);
+        }
+        
+        public ReportingService2005.ServerInfoHeader ListChildren(string Item, bool Recursive, out ReportingService2005.CatalogItem[] CatalogItems)
+        {
+            ReportingService2005.ListChildrenRequest inValue = new ReportingService2005.ListChildrenRequest();
+            inValue.Item = Item;
+            inValue.Recursive = Recursive;
+            ReportingService2005.ListChildrenResponse retVal = ((ReportingService2005.ReportingService2005Soap)(this)).ListChildren(inValue);
+            CatalogItems = retVal.CatalogItems;
+            return retVal.ServerInfoHeader;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<ReportingService2005.ListChildrenResponse> ReportingService2005.ReportingService2005Soap.ListChildrenAsync(ReportingService2005.ListChildrenRequest request)
         {
             return base.Channel.ListChildrenAsync(request);
@@ -10665,6 +11299,21 @@ namespace ReportingService2005
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        ReportingService2005.ListDependentItemsResponse ReportingService2005.ReportingService2005Soap.ListDependentItems(ReportingService2005.ListDependentItemsRequest request)
+        {
+            return base.Channel.ListDependentItems(request);
+        }
+        
+        public ReportingService2005.ServerInfoHeader ListDependentItems(string Item, out ReportingService2005.CatalogItem[] CatalogItems)
+        {
+            ReportingService2005.ListDependentItemsRequest inValue = new ReportingService2005.ListDependentItemsRequest();
+            inValue.Item = Item;
+            ReportingService2005.ListDependentItemsResponse retVal = ((ReportingService2005.ReportingService2005Soap)(this)).ListDependentItems(inValue);
+            CatalogItems = retVal.CatalogItems;
+            return retVal.ServerInfoHeader;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<ReportingService2005.ListDependentItemsResponse> ReportingService2005.ReportingService2005Soap.ListDependentItemsAsync(ReportingService2005.ListDependentItemsRequest request)
         {
             return base.Channel.ListDependentItemsAsync(request);
@@ -10675,6 +11324,23 @@ namespace ReportingService2005
             ReportingService2005.ListDependentItemsRequest inValue = new ReportingService2005.ListDependentItemsRequest();
             inValue.Item = Item;
             return ((ReportingService2005.ReportingService2005Soap)(this)).ListDependentItemsAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        ReportingService2005.GetPropertiesResponse ReportingService2005.ReportingService2005Soap.GetProperties(ReportingService2005.GetPropertiesRequest request)
+        {
+            return base.Channel.GetProperties(request);
+        }
+        
+        public ReportingService2005.ServerInfoHeader GetProperties(ReportingService2005.ItemNamespaceHeader ItemNamespaceHeader, string Item, ReportingService2005.Property[] Properties, out ReportingService2005.Property[] Values)
+        {
+            ReportingService2005.GetPropertiesRequest inValue = new ReportingService2005.GetPropertiesRequest();
+            inValue.ItemNamespaceHeader = ItemNamespaceHeader;
+            inValue.Item = Item;
+            inValue.Properties = Properties;
+            ReportingService2005.GetPropertiesResponse retVal = ((ReportingService2005.ReportingService2005Soap)(this)).GetProperties(inValue);
+            Values = retVal.Values;
+            return retVal.ServerInfoHeader;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -10693,6 +11359,22 @@ namespace ReportingService2005
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        ReportingService2005.SetPropertiesResponse ReportingService2005.ReportingService2005Soap.SetProperties(ReportingService2005.SetPropertiesRequest request)
+        {
+            return base.Channel.SetProperties(request);
+        }
+        
+        public ReportingService2005.ServerInfoHeader SetProperties(ReportingService2005.BatchHeader BatchHeader, string Item, ReportingService2005.Property[] Properties)
+        {
+            ReportingService2005.SetPropertiesRequest inValue = new ReportingService2005.SetPropertiesRequest();
+            inValue.BatchHeader = BatchHeader;
+            inValue.Item = Item;
+            inValue.Properties = Properties;
+            ReportingService2005.SetPropertiesResponse retVal = ((ReportingService2005.ReportingService2005Soap)(this)).SetProperties(inValue);
+            return retVal.ServerInfoHeader;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<ReportingService2005.SetPropertiesResponse> ReportingService2005.ReportingService2005Soap.SetPropertiesAsync(ReportingService2005.SetPropertiesRequest request)
         {
             return base.Channel.SetPropertiesAsync(request);
@@ -10705,6 +11387,21 @@ namespace ReportingService2005
             inValue.Item = Item;
             inValue.Properties = Properties;
             return ((ReportingService2005.ReportingService2005Soap)(this)).SetPropertiesAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        ReportingService2005.GetItemTypeResponse ReportingService2005.ReportingService2005Soap.GetItemType(ReportingService2005.GetItemTypeRequest request)
+        {
+            return base.Channel.GetItemType(request);
+        }
+        
+        public ReportingService2005.ServerInfoHeader GetItemType(string Item, out ReportingService2005.ItemTypeEnum Type)
+        {
+            ReportingService2005.GetItemTypeRequest inValue = new ReportingService2005.GetItemTypeRequest();
+            inValue.Item = Item;
+            ReportingService2005.GetItemTypeResponse retVal = ((ReportingService2005.ReportingService2005Soap)(this)).GetItemType(inValue);
+            Type = retVal.Type;
+            return retVal.ServerInfoHeader;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -10721,6 +11418,23 @@ namespace ReportingService2005
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        ReportingService2005.CreateFolderResponse ReportingService2005.ReportingService2005Soap.CreateFolder(ReportingService2005.CreateFolderRequest request)
+        {
+            return base.Channel.CreateFolder(request);
+        }
+        
+        public ReportingService2005.ServerInfoHeader CreateFolder(ReportingService2005.BatchHeader BatchHeader, string Folder, string Parent, ReportingService2005.Property[] Properties)
+        {
+            ReportingService2005.CreateFolderRequest inValue = new ReportingService2005.CreateFolderRequest();
+            inValue.BatchHeader = BatchHeader;
+            inValue.Folder = Folder;
+            inValue.Parent = Parent;
+            inValue.Properties = Properties;
+            ReportingService2005.CreateFolderResponse retVal = ((ReportingService2005.ReportingService2005Soap)(this)).CreateFolder(inValue);
+            return retVal.ServerInfoHeader;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<ReportingService2005.CreateFolderResponse> ReportingService2005.ReportingService2005Soap.CreateFolderAsync(ReportingService2005.CreateFolderRequest request)
         {
             return base.Channel.CreateFolderAsync(request);
@@ -10734,6 +11448,26 @@ namespace ReportingService2005
             inValue.Parent = Parent;
             inValue.Properties = Properties;
             return ((ReportingService2005.ReportingService2005Soap)(this)).CreateFolderAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        ReportingService2005.CreateReportResponse ReportingService2005.ReportingService2005Soap.CreateReport(ReportingService2005.CreateReportRequest request)
+        {
+            return base.Channel.CreateReport(request);
+        }
+        
+        public ReportingService2005.ServerInfoHeader CreateReport(ReportingService2005.BatchHeader BatchHeader, string Report, string Parent, bool Overwrite, byte[] Definition, ReportingService2005.Property[] Properties, out ReportingService2005.Warning[] Warnings)
+        {
+            ReportingService2005.CreateReportRequest inValue = new ReportingService2005.CreateReportRequest();
+            inValue.BatchHeader = BatchHeader;
+            inValue.Report = Report;
+            inValue.Parent = Parent;
+            inValue.Overwrite = Overwrite;
+            inValue.Definition = Definition;
+            inValue.Properties = Properties;
+            ReportingService2005.CreateReportResponse retVal = ((ReportingService2005.ReportingService2005Soap)(this)).CreateReport(inValue);
+            Warnings = retVal.Warnings;
+            return retVal.ServerInfoHeader;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -10755,6 +11489,21 @@ namespace ReportingService2005
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        ReportingService2005.GetReportDefinitionResponse ReportingService2005.ReportingService2005Soap.GetReportDefinition(ReportingService2005.GetReportDefinitionRequest request)
+        {
+            return base.Channel.GetReportDefinition(request);
+        }
+        
+        public ReportingService2005.ServerInfoHeader GetReportDefinition(string Report, out byte[] Definition)
+        {
+            ReportingService2005.GetReportDefinitionRequest inValue = new ReportingService2005.GetReportDefinitionRequest();
+            inValue.Report = Report;
+            ReportingService2005.GetReportDefinitionResponse retVal = ((ReportingService2005.ReportingService2005Soap)(this)).GetReportDefinition(inValue);
+            Definition = retVal.Definition;
+            return retVal.ServerInfoHeader;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<ReportingService2005.GetReportDefinitionResponse> ReportingService2005.ReportingService2005Soap.GetReportDefinitionAsync(ReportingService2005.GetReportDefinitionRequest request)
         {
             return base.Channel.GetReportDefinitionAsync(request);
@@ -10765,6 +11514,23 @@ namespace ReportingService2005
             ReportingService2005.GetReportDefinitionRequest inValue = new ReportingService2005.GetReportDefinitionRequest();
             inValue.Report = Report;
             return ((ReportingService2005.ReportingService2005Soap)(this)).GetReportDefinitionAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        ReportingService2005.SetReportDefinitionResponse ReportingService2005.ReportingService2005Soap.SetReportDefinition(ReportingService2005.SetReportDefinitionRequest request)
+        {
+            return base.Channel.SetReportDefinition(request);
+        }
+        
+        public ReportingService2005.ServerInfoHeader SetReportDefinition(ReportingService2005.BatchHeader BatchHeader, string Report, byte[] Definition, out ReportingService2005.Warning[] Warnings)
+        {
+            ReportingService2005.SetReportDefinitionRequest inValue = new ReportingService2005.SetReportDefinitionRequest();
+            inValue.BatchHeader = BatchHeader;
+            inValue.Report = Report;
+            inValue.Definition = Definition;
+            ReportingService2005.SetReportDefinitionResponse retVal = ((ReportingService2005.ReportingService2005Soap)(this)).SetReportDefinition(inValue);
+            Warnings = retVal.Warnings;
+            return retVal.ServerInfoHeader;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -10780,6 +11546,26 @@ namespace ReportingService2005
             inValue.Report = Report;
             inValue.Definition = Definition;
             return ((ReportingService2005.ReportingService2005Soap)(this)).SetReportDefinitionAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        ReportingService2005.CreateResourceResponse ReportingService2005.ReportingService2005Soap.CreateResource(ReportingService2005.CreateResourceRequest request)
+        {
+            return base.Channel.CreateResource(request);
+        }
+        
+        public ReportingService2005.ServerInfoHeader CreateResource(ReportingService2005.BatchHeader BatchHeader, string Resource, string Parent, bool Overwrite, byte[] Contents, string MimeType, ReportingService2005.Property[] Properties)
+        {
+            ReportingService2005.CreateResourceRequest inValue = new ReportingService2005.CreateResourceRequest();
+            inValue.BatchHeader = BatchHeader;
+            inValue.Resource = Resource;
+            inValue.Parent = Parent;
+            inValue.Overwrite = Overwrite;
+            inValue.Contents = Contents;
+            inValue.MimeType = MimeType;
+            inValue.Properties = Properties;
+            ReportingService2005.CreateResourceResponse retVal = ((ReportingService2005.ReportingService2005Soap)(this)).CreateResource(inValue);
+            return retVal.ServerInfoHeader;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -10802,6 +11588,23 @@ namespace ReportingService2005
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        ReportingService2005.SetResourceContentsResponse ReportingService2005.ReportingService2005Soap.SetResourceContents(ReportingService2005.SetResourceContentsRequest request)
+        {
+            return base.Channel.SetResourceContents(request);
+        }
+        
+        public ReportingService2005.ServerInfoHeader SetResourceContents(ReportingService2005.BatchHeader BatchHeader, string Resource, byte[] Contents, string MimeType)
+        {
+            ReportingService2005.SetResourceContentsRequest inValue = new ReportingService2005.SetResourceContentsRequest();
+            inValue.BatchHeader = BatchHeader;
+            inValue.Resource = Resource;
+            inValue.Contents = Contents;
+            inValue.MimeType = MimeType;
+            ReportingService2005.SetResourceContentsResponse retVal = ((ReportingService2005.ReportingService2005Soap)(this)).SetResourceContents(inValue);
+            return retVal.ServerInfoHeader;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<ReportingService2005.SetResourceContentsResponse> ReportingService2005.ReportingService2005Soap.SetResourceContentsAsync(ReportingService2005.SetResourceContentsRequest request)
         {
             return base.Channel.SetResourceContentsAsync(request);
@@ -10817,9 +11620,44 @@ namespace ReportingService2005
             return ((ReportingService2005.ReportingService2005Soap)(this)).SetResourceContentsAsync(inValue);
         }
         
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        ReportingService2005.GetResourceContentsResponse ReportingService2005.ReportingService2005Soap.GetResourceContents(ReportingService2005.GetResourceContentsRequest request)
+        {
+            return base.Channel.GetResourceContents(request);
+        }
+        
+        public ReportingService2005.ServerInfoHeader GetResourceContents(string Resource, out byte[] Contents, out string MimeType)
+        {
+            ReportingService2005.GetResourceContentsRequest inValue = new ReportingService2005.GetResourceContentsRequest();
+            inValue.Resource = Resource;
+            ReportingService2005.GetResourceContentsResponse retVal = ((ReportingService2005.ReportingService2005Soap)(this)).GetResourceContents(inValue);
+            Contents = retVal.Contents;
+            MimeType = retVal.MimeType;
+            return retVal.ServerInfoHeader;
+        }
+        
         public System.Threading.Tasks.Task<ReportingService2005.GetResourceContentsResponse> GetResourceContentsAsync(ReportingService2005.GetResourceContentsRequest request)
         {
             return base.Channel.GetResourceContentsAsync(request);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        ReportingService2005.GetReportParametersResponse ReportingService2005.ReportingService2005Soap.GetReportParameters(ReportingService2005.GetReportParametersRequest request)
+        {
+            return base.Channel.GetReportParameters(request);
+        }
+        
+        public ReportingService2005.ServerInfoHeader GetReportParameters(string Report, string HistoryID, bool ForRendering, ReportingService2005.ParameterValue[] Values, ReportingService2005.DataSourceCredentials[] Credentials, out ReportingService2005.ReportParameter[] Parameters)
+        {
+            ReportingService2005.GetReportParametersRequest inValue = new ReportingService2005.GetReportParametersRequest();
+            inValue.Report = Report;
+            inValue.HistoryID = HistoryID;
+            inValue.ForRendering = ForRendering;
+            inValue.Values = Values;
+            inValue.Credentials = Credentials;
+            ReportingService2005.GetReportParametersResponse retVal = ((ReportingService2005.ReportingService2005Soap)(this)).GetReportParameters(inValue);
+            Parameters = retVal.Parameters;
+            return retVal.ServerInfoHeader;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -10840,6 +11678,22 @@ namespace ReportingService2005
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        ReportingService2005.SetReportParametersResponse ReportingService2005.ReportingService2005Soap.SetReportParameters(ReportingService2005.SetReportParametersRequest request)
+        {
+            return base.Channel.SetReportParameters(request);
+        }
+        
+        public ReportingService2005.ServerInfoHeader SetReportParameters(ReportingService2005.BatchHeader BatchHeader, string Report, ReportingService2005.ReportParameter[] Parameters)
+        {
+            ReportingService2005.SetReportParametersRequest inValue = new ReportingService2005.SetReportParametersRequest();
+            inValue.BatchHeader = BatchHeader;
+            inValue.Report = Report;
+            inValue.Parameters = Parameters;
+            ReportingService2005.SetReportParametersResponse retVal = ((ReportingService2005.ReportingService2005Soap)(this)).SetReportParameters(inValue);
+            return retVal.ServerInfoHeader;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<ReportingService2005.SetReportParametersResponse> ReportingService2005.ReportingService2005Soap.SetReportParametersAsync(ReportingService2005.SetReportParametersRequest request)
         {
             return base.Channel.SetReportParametersAsync(request);
@@ -10852,6 +11706,24 @@ namespace ReportingService2005
             inValue.Report = Report;
             inValue.Parameters = Parameters;
             return ((ReportingService2005.ReportingService2005Soap)(this)).SetReportParametersAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        ReportingService2005.CreateLinkedReportResponse ReportingService2005.ReportingService2005Soap.CreateLinkedReport(ReportingService2005.CreateLinkedReportRequest request)
+        {
+            return base.Channel.CreateLinkedReport(request);
+        }
+        
+        public ReportingService2005.ServerInfoHeader CreateLinkedReport(ReportingService2005.BatchHeader BatchHeader, string Report, string Parent, string Link, ReportingService2005.Property[] Properties)
+        {
+            ReportingService2005.CreateLinkedReportRequest inValue = new ReportingService2005.CreateLinkedReportRequest();
+            inValue.BatchHeader = BatchHeader;
+            inValue.Report = Report;
+            inValue.Parent = Parent;
+            inValue.Link = Link;
+            inValue.Properties = Properties;
+            ReportingService2005.CreateLinkedReportResponse retVal = ((ReportingService2005.ReportingService2005Soap)(this)).CreateLinkedReport(inValue);
+            return retVal.ServerInfoHeader;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -10872,6 +11744,21 @@ namespace ReportingService2005
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        ReportingService2005.GetReportLinkResponse ReportingService2005.ReportingService2005Soap.GetReportLink(ReportingService2005.GetReportLinkRequest request)
+        {
+            return base.Channel.GetReportLink(request);
+        }
+        
+        public ReportingService2005.ServerInfoHeader GetReportLink(string Report, out string Link)
+        {
+            ReportingService2005.GetReportLinkRequest inValue = new ReportingService2005.GetReportLinkRequest();
+            inValue.Report = Report;
+            ReportingService2005.GetReportLinkResponse retVal = ((ReportingService2005.ReportingService2005Soap)(this)).GetReportLink(inValue);
+            Link = retVal.Link;
+            return retVal.ServerInfoHeader;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<ReportingService2005.GetReportLinkResponse> ReportingService2005.ReportingService2005Soap.GetReportLinkAsync(ReportingService2005.GetReportLinkRequest request)
         {
             return base.Channel.GetReportLinkAsync(request);
@@ -10882,6 +11769,22 @@ namespace ReportingService2005
             ReportingService2005.GetReportLinkRequest inValue = new ReportingService2005.GetReportLinkRequest();
             inValue.Report = Report;
             return ((ReportingService2005.ReportingService2005Soap)(this)).GetReportLinkAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        ReportingService2005.SetReportLinkResponse ReportingService2005.ReportingService2005Soap.SetReportLink(ReportingService2005.SetReportLinkRequest request)
+        {
+            return base.Channel.SetReportLink(request);
+        }
+        
+        public ReportingService2005.ServerInfoHeader SetReportLink(ReportingService2005.BatchHeader BatchHeader, string Report, string Link)
+        {
+            ReportingService2005.SetReportLinkRequest inValue = new ReportingService2005.SetReportLinkRequest();
+            inValue.BatchHeader = BatchHeader;
+            inValue.Report = Report;
+            inValue.Link = Link;
+            ReportingService2005.SetReportLinkResponse retVal = ((ReportingService2005.ReportingService2005Soap)(this)).SetReportLink(inValue);
+            return retVal.ServerInfoHeader;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -10899,9 +11802,43 @@ namespace ReportingService2005
             return ((ReportingService2005.ReportingService2005Soap)(this)).SetReportLinkAsync(inValue);
         }
         
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        ReportingService2005.GetRenderResourceResponse ReportingService2005.ReportingService2005Soap.GetRenderResource(ReportingService2005.GetRenderResourceRequest request)
+        {
+            return base.Channel.GetRenderResource(request);
+        }
+        
+        public ReportingService2005.ServerInfoHeader GetRenderResource(string Format, string DeviceInfo, out byte[] Result, out string MimeType)
+        {
+            ReportingService2005.GetRenderResourceRequest inValue = new ReportingService2005.GetRenderResourceRequest();
+            inValue.Format = Format;
+            inValue.DeviceInfo = DeviceInfo;
+            ReportingService2005.GetRenderResourceResponse retVal = ((ReportingService2005.ReportingService2005Soap)(this)).GetRenderResource(inValue);
+            Result = retVal.Result;
+            MimeType = retVal.MimeType;
+            return retVal.ServerInfoHeader;
+        }
+        
         public System.Threading.Tasks.Task<ReportingService2005.GetRenderResourceResponse> GetRenderResourceAsync(ReportingService2005.GetRenderResourceRequest request)
         {
             return base.Channel.GetRenderResourceAsync(request);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        ReportingService2005.SetExecutionOptionsResponse ReportingService2005.ReportingService2005Soap.SetExecutionOptions(ReportingService2005.SetExecutionOptionsRequest request)
+        {
+            return base.Channel.SetExecutionOptions(request);
+        }
+        
+        public ReportingService2005.ServerInfoHeader SetExecutionOptions(ReportingService2005.BatchHeader BatchHeader, string Report, ReportingService2005.ExecutionSettingEnum ExecutionSetting, ReportingService2005.ScheduleDefinitionOrReference Item)
+        {
+            ReportingService2005.SetExecutionOptionsRequest inValue = new ReportingService2005.SetExecutionOptionsRequest();
+            inValue.BatchHeader = BatchHeader;
+            inValue.Report = Report;
+            inValue.ExecutionSetting = ExecutionSetting;
+            inValue.Item = Item;
+            ReportingService2005.SetExecutionOptionsResponse retVal = ((ReportingService2005.ReportingService2005Soap)(this)).SetExecutionOptions(inValue);
+            return retVal.ServerInfoHeader;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -10920,9 +11857,42 @@ namespace ReportingService2005
             return ((ReportingService2005.ReportingService2005Soap)(this)).SetExecutionOptionsAsync(inValue);
         }
         
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        ReportingService2005.GetExecutionOptionsResponse ReportingService2005.ReportingService2005Soap.GetExecutionOptions(ReportingService2005.GetExecutionOptionsRequest request)
+        {
+            return base.Channel.GetExecutionOptions(request);
+        }
+        
+        public ReportingService2005.ServerInfoHeader GetExecutionOptions(string Report, out ReportingService2005.ExecutionSettingEnum ExecutionSetting, out ReportingService2005.ScheduleDefinitionOrReference Item)
+        {
+            ReportingService2005.GetExecutionOptionsRequest inValue = new ReportingService2005.GetExecutionOptionsRequest();
+            inValue.Report = Report;
+            ReportingService2005.GetExecutionOptionsResponse retVal = ((ReportingService2005.ReportingService2005Soap)(this)).GetExecutionOptions(inValue);
+            ExecutionSetting = retVal.ExecutionSetting;
+            Item = retVal.Item;
+            return retVal.ServerInfoHeader;
+        }
+        
         public System.Threading.Tasks.Task<ReportingService2005.GetExecutionOptionsResponse> GetExecutionOptionsAsync(ReportingService2005.GetExecutionOptionsRequest request)
         {
             return base.Channel.GetExecutionOptionsAsync(request);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        ReportingService2005.SetCacheOptionsResponse ReportingService2005.ReportingService2005Soap.SetCacheOptions(ReportingService2005.SetCacheOptionsRequest request)
+        {
+            return base.Channel.SetCacheOptions(request);
+        }
+        
+        public ReportingService2005.ServerInfoHeader SetCacheOptions(ReportingService2005.BatchHeader BatchHeader, string Report, bool CacheReport, ReportingService2005.ExpirationDefinition Item)
+        {
+            ReportingService2005.SetCacheOptionsRequest inValue = new ReportingService2005.SetCacheOptionsRequest();
+            inValue.BatchHeader = BatchHeader;
+            inValue.Report = Report;
+            inValue.CacheReport = CacheReport;
+            inValue.Item = Item;
+            ReportingService2005.SetCacheOptionsResponse retVal = ((ReportingService2005.ReportingService2005Soap)(this)).SetCacheOptions(inValue);
+            return retVal.ServerInfoHeader;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -10941,9 +11911,40 @@ namespace ReportingService2005
             return ((ReportingService2005.ReportingService2005Soap)(this)).SetCacheOptionsAsync(inValue);
         }
         
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        ReportingService2005.GetCacheOptionsResponse ReportingService2005.ReportingService2005Soap.GetCacheOptions(ReportingService2005.GetCacheOptionsRequest request)
+        {
+            return base.Channel.GetCacheOptions(request);
+        }
+        
+        public ReportingService2005.ServerInfoHeader GetCacheOptions(string Report, out bool CacheReport, out ReportingService2005.ExpirationDefinition Item)
+        {
+            ReportingService2005.GetCacheOptionsRequest inValue = new ReportingService2005.GetCacheOptionsRequest();
+            inValue.Report = Report;
+            ReportingService2005.GetCacheOptionsResponse retVal = ((ReportingService2005.ReportingService2005Soap)(this)).GetCacheOptions(inValue);
+            CacheReport = retVal.CacheReport;
+            Item = retVal.Item;
+            return retVal.ServerInfoHeader;
+        }
+        
         public System.Threading.Tasks.Task<ReportingService2005.GetCacheOptionsResponse> GetCacheOptionsAsync(ReportingService2005.GetCacheOptionsRequest request)
         {
             return base.Channel.GetCacheOptionsAsync(request);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        ReportingService2005.UpdateReportExecutionSnapshotResponse ReportingService2005.ReportingService2005Soap.UpdateReportExecutionSnapshot(ReportingService2005.UpdateReportExecutionSnapshotRequest request)
+        {
+            return base.Channel.UpdateReportExecutionSnapshot(request);
+        }
+        
+        public ReportingService2005.ServerInfoHeader UpdateReportExecutionSnapshot(ReportingService2005.BatchHeader BatchHeader, string Report)
+        {
+            ReportingService2005.UpdateReportExecutionSnapshotRequest inValue = new ReportingService2005.UpdateReportExecutionSnapshotRequest();
+            inValue.BatchHeader = BatchHeader;
+            inValue.Report = Report;
+            ReportingService2005.UpdateReportExecutionSnapshotResponse retVal = ((ReportingService2005.ReportingService2005Soap)(this)).UpdateReportExecutionSnapshot(inValue);
+            return retVal.ServerInfoHeader;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -10961,6 +11962,21 @@ namespace ReportingService2005
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        ReportingService2005.FlushCacheResponse ReportingService2005.ReportingService2005Soap.FlushCache(ReportingService2005.FlushCacheRequest request)
+        {
+            return base.Channel.FlushCache(request);
+        }
+        
+        public ReportingService2005.ServerInfoHeader FlushCache(ReportingService2005.BatchHeader BatchHeader, string Report)
+        {
+            ReportingService2005.FlushCacheRequest inValue = new ReportingService2005.FlushCacheRequest();
+            inValue.BatchHeader = BatchHeader;
+            inValue.Report = Report;
+            ReportingService2005.FlushCacheResponse retVal = ((ReportingService2005.ReportingService2005Soap)(this)).FlushCache(inValue);
+            return retVal.ServerInfoHeader;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<ReportingService2005.FlushCacheResponse> ReportingService2005.ReportingService2005Soap.FlushCacheAsync(ReportingService2005.FlushCacheRequest request)
         {
             return base.Channel.FlushCacheAsync(request);
@@ -10972,6 +11988,20 @@ namespace ReportingService2005
             inValue.BatchHeader = BatchHeader;
             inValue.Report = Report;
             return ((ReportingService2005.ReportingService2005Soap)(this)).FlushCacheAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        ReportingService2005.ListJobsResponse ReportingService2005.ReportingService2005Soap.ListJobs(ReportingService2005.ListJobsRequest request)
+        {
+            return base.Channel.ListJobs(request);
+        }
+        
+        public ReportingService2005.ServerInfoHeader ListJobs(out ReportingService2005.Job[] Jobs)
+        {
+            ReportingService2005.ListJobsRequest inValue = new ReportingService2005.ListJobsRequest();
+            ReportingService2005.ListJobsResponse retVal = ((ReportingService2005.ReportingService2005Soap)(this)).ListJobs(inValue);
+            Jobs = retVal.Jobs;
+            return retVal.ServerInfoHeader;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -10987,6 +12017,21 @@ namespace ReportingService2005
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        ReportingService2005.CancelJobResponse ReportingService2005.ReportingService2005Soap.CancelJob(ReportingService2005.CancelJobRequest request)
+        {
+            return base.Channel.CancelJob(request);
+        }
+        
+        public ReportingService2005.ServerInfoHeader CancelJob(string JobID, out bool CancelJobResult)
+        {
+            ReportingService2005.CancelJobRequest inValue = new ReportingService2005.CancelJobRequest();
+            inValue.JobID = JobID;
+            ReportingService2005.CancelJobResponse retVal = ((ReportingService2005.ReportingService2005Soap)(this)).CancelJob(inValue);
+            CancelJobResult = retVal.CancelJobResult;
+            return retVal.ServerInfoHeader;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<ReportingService2005.CancelJobResponse> ReportingService2005.ReportingService2005Soap.CancelJobAsync(ReportingService2005.CancelJobRequest request)
         {
             return base.Channel.CancelJobAsync(request);
@@ -10997,6 +12042,25 @@ namespace ReportingService2005
             ReportingService2005.CancelJobRequest inValue = new ReportingService2005.CancelJobRequest();
             inValue.JobID = JobID;
             return ((ReportingService2005.ReportingService2005Soap)(this)).CancelJobAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        ReportingService2005.CreateDataSourceResponse ReportingService2005.ReportingService2005Soap.CreateDataSource(ReportingService2005.CreateDataSourceRequest request)
+        {
+            return base.Channel.CreateDataSource(request);
+        }
+        
+        public ReportingService2005.ServerInfoHeader CreateDataSource(ReportingService2005.BatchHeader BatchHeader, string DataSource, string Parent, bool Overwrite, ReportingService2005.DataSourceDefinition Definition, ReportingService2005.Property[] Properties)
+        {
+            ReportingService2005.CreateDataSourceRequest inValue = new ReportingService2005.CreateDataSourceRequest();
+            inValue.BatchHeader = BatchHeader;
+            inValue.DataSource = DataSource;
+            inValue.Parent = Parent;
+            inValue.Overwrite = Overwrite;
+            inValue.Definition = Definition;
+            inValue.Properties = Properties;
+            ReportingService2005.CreateDataSourceResponse retVal = ((ReportingService2005.ReportingService2005Soap)(this)).CreateDataSource(inValue);
+            return retVal.ServerInfoHeader;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -11018,6 +12082,21 @@ namespace ReportingService2005
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        ReportingService2005.GetDataSourceContentsResponse ReportingService2005.ReportingService2005Soap.GetDataSourceContents(ReportingService2005.GetDataSourceContentsRequest request)
+        {
+            return base.Channel.GetDataSourceContents(request);
+        }
+        
+        public ReportingService2005.ServerInfoHeader GetDataSourceContents(string DataSource, out ReportingService2005.DataSourceDefinition Definition)
+        {
+            ReportingService2005.GetDataSourceContentsRequest inValue = new ReportingService2005.GetDataSourceContentsRequest();
+            inValue.DataSource = DataSource;
+            ReportingService2005.GetDataSourceContentsResponse retVal = ((ReportingService2005.ReportingService2005Soap)(this)).GetDataSourceContents(inValue);
+            Definition = retVal.Definition;
+            return retVal.ServerInfoHeader;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<ReportingService2005.GetDataSourceContentsResponse> ReportingService2005.ReportingService2005Soap.GetDataSourceContentsAsync(ReportingService2005.GetDataSourceContentsRequest request)
         {
             return base.Channel.GetDataSourceContentsAsync(request);
@@ -11028,6 +12107,22 @@ namespace ReportingService2005
             ReportingService2005.GetDataSourceContentsRequest inValue = new ReportingService2005.GetDataSourceContentsRequest();
             inValue.DataSource = DataSource;
             return ((ReportingService2005.ReportingService2005Soap)(this)).GetDataSourceContentsAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        ReportingService2005.SetDataSourceContentsResponse ReportingService2005.ReportingService2005Soap.SetDataSourceContents(ReportingService2005.SetDataSourceContentsRequest request)
+        {
+            return base.Channel.SetDataSourceContents(request);
+        }
+        
+        public ReportingService2005.ServerInfoHeader SetDataSourceContents(ReportingService2005.BatchHeader BatchHeader, string DataSource, ReportingService2005.DataSourceDefinition Definition)
+        {
+            ReportingService2005.SetDataSourceContentsRequest inValue = new ReportingService2005.SetDataSourceContentsRequest();
+            inValue.BatchHeader = BatchHeader;
+            inValue.DataSource = DataSource;
+            inValue.Definition = Definition;
+            ReportingService2005.SetDataSourceContentsResponse retVal = ((ReportingService2005.ReportingService2005Soap)(this)).SetDataSourceContents(inValue);
+            return retVal.ServerInfoHeader;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -11046,6 +12141,21 @@ namespace ReportingService2005
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        ReportingService2005.EnableDataSourceResponse ReportingService2005.ReportingService2005Soap.EnableDataSource(ReportingService2005.EnableDataSourceRequest request)
+        {
+            return base.Channel.EnableDataSource(request);
+        }
+        
+        public ReportingService2005.ServerInfoHeader EnableDataSource(ReportingService2005.BatchHeader BatchHeader, string DataSource)
+        {
+            ReportingService2005.EnableDataSourceRequest inValue = new ReportingService2005.EnableDataSourceRequest();
+            inValue.BatchHeader = BatchHeader;
+            inValue.DataSource = DataSource;
+            ReportingService2005.EnableDataSourceResponse retVal = ((ReportingService2005.ReportingService2005Soap)(this)).EnableDataSource(inValue);
+            return retVal.ServerInfoHeader;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<ReportingService2005.EnableDataSourceResponse> ReportingService2005.ReportingService2005Soap.EnableDataSourceAsync(ReportingService2005.EnableDataSourceRequest request)
         {
             return base.Channel.EnableDataSourceAsync(request);
@@ -11060,6 +12170,21 @@ namespace ReportingService2005
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        ReportingService2005.DisableDataSourceResponse ReportingService2005.ReportingService2005Soap.DisableDataSource(ReportingService2005.DisableDataSourceRequest request)
+        {
+            return base.Channel.DisableDataSource(request);
+        }
+        
+        public ReportingService2005.ServerInfoHeader DisableDataSource(ReportingService2005.BatchHeader BatchHeader, string DataSource)
+        {
+            ReportingService2005.DisableDataSourceRequest inValue = new ReportingService2005.DisableDataSourceRequest();
+            inValue.BatchHeader = BatchHeader;
+            inValue.DataSource = DataSource;
+            ReportingService2005.DisableDataSourceResponse retVal = ((ReportingService2005.ReportingService2005Soap)(this)).DisableDataSource(inValue);
+            return retVal.ServerInfoHeader;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<ReportingService2005.DisableDataSourceResponse> ReportingService2005.ReportingService2005Soap.DisableDataSourceAsync(ReportingService2005.DisableDataSourceRequest request)
         {
             return base.Channel.DisableDataSourceAsync(request);
@@ -11071,6 +12196,22 @@ namespace ReportingService2005
             inValue.BatchHeader = BatchHeader;
             inValue.DataSource = DataSource;
             return ((ReportingService2005.ReportingService2005Soap)(this)).DisableDataSourceAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        ReportingService2005.SetItemDataSourcesResponse ReportingService2005.ReportingService2005Soap.SetItemDataSources(ReportingService2005.SetItemDataSourcesRequest request)
+        {
+            return base.Channel.SetItemDataSources(request);
+        }
+        
+        public ReportingService2005.ServerInfoHeader SetItemDataSources(ReportingService2005.BatchHeader BatchHeader, string Item, ReportingService2005.DataSource[] DataSources)
+        {
+            ReportingService2005.SetItemDataSourcesRequest inValue = new ReportingService2005.SetItemDataSourcesRequest();
+            inValue.BatchHeader = BatchHeader;
+            inValue.Item = Item;
+            inValue.DataSources = DataSources;
+            ReportingService2005.SetItemDataSourcesResponse retVal = ((ReportingService2005.ReportingService2005Soap)(this)).SetItemDataSources(inValue);
+            return retVal.ServerInfoHeader;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -11089,6 +12230,21 @@ namespace ReportingService2005
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        ReportingService2005.GetItemDataSourcesResponse ReportingService2005.ReportingService2005Soap.GetItemDataSources(ReportingService2005.GetItemDataSourcesRequest request)
+        {
+            return base.Channel.GetItemDataSources(request);
+        }
+        
+        public ReportingService2005.ServerInfoHeader GetItemDataSources(string Item, out ReportingService2005.DataSource[] DataSources)
+        {
+            ReportingService2005.GetItemDataSourcesRequest inValue = new ReportingService2005.GetItemDataSourcesRequest();
+            inValue.Item = Item;
+            ReportingService2005.GetItemDataSourcesResponse retVal = ((ReportingService2005.ReportingService2005Soap)(this)).GetItemDataSources(inValue);
+            DataSources = retVal.DataSources;
+            return retVal.ServerInfoHeader;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<ReportingService2005.GetItemDataSourcesResponse> ReportingService2005.ReportingService2005Soap.GetItemDataSourcesAsync(ReportingService2005.GetItemDataSourcesRequest request)
         {
             return base.Channel.GetItemDataSourcesAsync(request);
@@ -11099,6 +12255,21 @@ namespace ReportingService2005
             ReportingService2005.GetItemDataSourcesRequest inValue = new ReportingService2005.GetItemDataSourcesRequest();
             inValue.Item = Item;
             return ((ReportingService2005.ReportingService2005Soap)(this)).GetItemDataSourcesAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        ReportingService2005.GetItemDataSourcePromptsResponse ReportingService2005.ReportingService2005Soap.GetItemDataSourcePrompts(ReportingService2005.GetItemDataSourcePromptsRequest request)
+        {
+            return base.Channel.GetItemDataSourcePrompts(request);
+        }
+        
+        public ReportingService2005.ServerInfoHeader GetItemDataSourcePrompts(string Item, out ReportingService2005.DataSourcePrompt[] DataSourcePrompts)
+        {
+            ReportingService2005.GetItemDataSourcePromptsRequest inValue = new ReportingService2005.GetItemDataSourcePromptsRequest();
+            inValue.Item = Item;
+            ReportingService2005.GetItemDataSourcePromptsResponse retVal = ((ReportingService2005.ReportingService2005Soap)(this)).GetItemDataSourcePrompts(inValue);
+            DataSourcePrompts = retVal.DataSourcePrompts;
+            return retVal.ServerInfoHeader;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -11114,9 +12285,44 @@ namespace ReportingService2005
             return ((ReportingService2005.ReportingService2005Soap)(this)).GetItemDataSourcePromptsAsync(inValue);
         }
         
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        ReportingService2005.CreateReportHistorySnapshotResponse ReportingService2005.ReportingService2005Soap.CreateReportHistorySnapshot(ReportingService2005.CreateReportHistorySnapshotRequest request)
+        {
+            return base.Channel.CreateReportHistorySnapshot(request);
+        }
+        
+        public ReportingService2005.ServerInfoHeader CreateReportHistorySnapshot(ReportingService2005.BatchHeader BatchHeader, string Report, out string HistoryID, out ReportingService2005.Warning[] Warnings)
+        {
+            ReportingService2005.CreateReportHistorySnapshotRequest inValue = new ReportingService2005.CreateReportHistorySnapshotRequest();
+            inValue.BatchHeader = BatchHeader;
+            inValue.Report = Report;
+            ReportingService2005.CreateReportHistorySnapshotResponse retVal = ((ReportingService2005.ReportingService2005Soap)(this)).CreateReportHistorySnapshot(inValue);
+            HistoryID = retVal.HistoryID;
+            Warnings = retVal.Warnings;
+            return retVal.ServerInfoHeader;
+        }
+        
         public System.Threading.Tasks.Task<ReportingService2005.CreateReportHistorySnapshotResponse> CreateReportHistorySnapshotAsync(ReportingService2005.CreateReportHistorySnapshotRequest request)
         {
             return base.Channel.CreateReportHistorySnapshotAsync(request);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        ReportingService2005.SetReportHistoryOptionsResponse ReportingService2005.ReportingService2005Soap.SetReportHistoryOptions(ReportingService2005.SetReportHistoryOptionsRequest request)
+        {
+            return base.Channel.SetReportHistoryOptions(request);
+        }
+        
+        public ReportingService2005.ServerInfoHeader SetReportHistoryOptions(ReportingService2005.BatchHeader BatchHeader, string Report, bool EnableManualSnapshotCreation, bool KeepExecutionSnapshots, ReportingService2005.ScheduleDefinitionOrReference Item)
+        {
+            ReportingService2005.SetReportHistoryOptionsRequest inValue = new ReportingService2005.SetReportHistoryOptionsRequest();
+            inValue.BatchHeader = BatchHeader;
+            inValue.Report = Report;
+            inValue.EnableManualSnapshotCreation = EnableManualSnapshotCreation;
+            inValue.KeepExecutionSnapshots = KeepExecutionSnapshots;
+            inValue.Item = Item;
+            ReportingService2005.SetReportHistoryOptionsResponse retVal = ((ReportingService2005.ReportingService2005Soap)(this)).SetReportHistoryOptions(inValue);
+            return retVal.ServerInfoHeader;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -11136,9 +12342,43 @@ namespace ReportingService2005
             return ((ReportingService2005.ReportingService2005Soap)(this)).SetReportHistoryOptionsAsync(inValue);
         }
         
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        ReportingService2005.GetReportHistoryOptionsResponse ReportingService2005.ReportingService2005Soap.GetReportHistoryOptions(ReportingService2005.GetReportHistoryOptionsRequest request)
+        {
+            return base.Channel.GetReportHistoryOptions(request);
+        }
+        
+        public ReportingService2005.ServerInfoHeader GetReportHistoryOptions(string Report, out bool EnableManualSnapshotCreation, out bool KeepExecutionSnapshots, out ReportingService2005.ScheduleDefinitionOrReference Item)
+        {
+            ReportingService2005.GetReportHistoryOptionsRequest inValue = new ReportingService2005.GetReportHistoryOptionsRequest();
+            inValue.Report = Report;
+            ReportingService2005.GetReportHistoryOptionsResponse retVal = ((ReportingService2005.ReportingService2005Soap)(this)).GetReportHistoryOptions(inValue);
+            EnableManualSnapshotCreation = retVal.EnableManualSnapshotCreation;
+            KeepExecutionSnapshots = retVal.KeepExecutionSnapshots;
+            Item = retVal.Item;
+            return retVal.ServerInfoHeader;
+        }
+        
         public System.Threading.Tasks.Task<ReportingService2005.GetReportHistoryOptionsResponse> GetReportHistoryOptionsAsync(ReportingService2005.GetReportHistoryOptionsRequest request)
         {
             return base.Channel.GetReportHistoryOptionsAsync(request);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        ReportingService2005.SetReportHistoryLimitResponse ReportingService2005.ReportingService2005Soap.SetReportHistoryLimit(ReportingService2005.SetReportHistoryLimitRequest request)
+        {
+            return base.Channel.SetReportHistoryLimit(request);
+        }
+        
+        public ReportingService2005.ServerInfoHeader SetReportHistoryLimit(ReportingService2005.BatchHeader BatchHeader, string Report, bool UseSystem, int HistoryLimit)
+        {
+            ReportingService2005.SetReportHistoryLimitRequest inValue = new ReportingService2005.SetReportHistoryLimitRequest();
+            inValue.BatchHeader = BatchHeader;
+            inValue.Report = Report;
+            inValue.UseSystem = UseSystem;
+            inValue.HistoryLimit = HistoryLimit;
+            ReportingService2005.SetReportHistoryLimitResponse retVal = ((ReportingService2005.ReportingService2005Soap)(this)).SetReportHistoryLimit(inValue);
+            return retVal.ServerInfoHeader;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -11157,9 +12397,41 @@ namespace ReportingService2005
             return ((ReportingService2005.ReportingService2005Soap)(this)).SetReportHistoryLimitAsync(inValue);
         }
         
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        ReportingService2005.GetReportHistoryLimitResponse ReportingService2005.ReportingService2005Soap.GetReportHistoryLimit(ReportingService2005.GetReportHistoryLimitRequest request)
+        {
+            return base.Channel.GetReportHistoryLimit(request);
+        }
+        
+        public ReportingService2005.ServerInfoHeader GetReportHistoryLimit(string Report, out int HistoryLimit, out bool IsSystem, out int SystemLimit)
+        {
+            ReportingService2005.GetReportHistoryLimitRequest inValue = new ReportingService2005.GetReportHistoryLimitRequest();
+            inValue.Report = Report;
+            ReportingService2005.GetReportHistoryLimitResponse retVal = ((ReportingService2005.ReportingService2005Soap)(this)).GetReportHistoryLimit(inValue);
+            HistoryLimit = retVal.HistoryLimit;
+            IsSystem = retVal.IsSystem;
+            SystemLimit = retVal.SystemLimit;
+            return retVal.ServerInfoHeader;
+        }
+        
         public System.Threading.Tasks.Task<ReportingService2005.GetReportHistoryLimitResponse> GetReportHistoryLimitAsync(ReportingService2005.GetReportHistoryLimitRequest request)
         {
             return base.Channel.GetReportHistoryLimitAsync(request);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        ReportingService2005.ListReportHistoryResponse ReportingService2005.ReportingService2005Soap.ListReportHistory(ReportingService2005.ListReportHistoryRequest request)
+        {
+            return base.Channel.ListReportHistory(request);
+        }
+        
+        public ReportingService2005.ServerInfoHeader ListReportHistory(string Report, out ReportingService2005.ReportHistorySnapshot[] ReportHistory)
+        {
+            ReportingService2005.ListReportHistoryRequest inValue = new ReportingService2005.ListReportHistoryRequest();
+            inValue.Report = Report;
+            ReportingService2005.ListReportHistoryResponse retVal = ((ReportingService2005.ReportingService2005Soap)(this)).ListReportHistory(inValue);
+            ReportHistory = retVal.ReportHistory;
+            return retVal.ServerInfoHeader;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -11173,6 +12445,22 @@ namespace ReportingService2005
             ReportingService2005.ListReportHistoryRequest inValue = new ReportingService2005.ListReportHistoryRequest();
             inValue.Report = Report;
             return ((ReportingService2005.ReportingService2005Soap)(this)).ListReportHistoryAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        ReportingService2005.DeleteReportHistorySnapshotResponse ReportingService2005.ReportingService2005Soap.DeleteReportHistorySnapshot(ReportingService2005.DeleteReportHistorySnapshotRequest request)
+        {
+            return base.Channel.DeleteReportHistorySnapshot(request);
+        }
+        
+        public ReportingService2005.ServerInfoHeader DeleteReportHistorySnapshot(ReportingService2005.BatchHeader BatchHeader, string Report, string HistoryID)
+        {
+            ReportingService2005.DeleteReportHistorySnapshotRequest inValue = new ReportingService2005.DeleteReportHistorySnapshotRequest();
+            inValue.BatchHeader = BatchHeader;
+            inValue.Report = Report;
+            inValue.HistoryID = HistoryID;
+            ReportingService2005.DeleteReportHistorySnapshotResponse retVal = ((ReportingService2005.ReportingService2005Soap)(this)).DeleteReportHistorySnapshot(inValue);
+            return retVal.ServerInfoHeader;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -11191,6 +12479,23 @@ namespace ReportingService2005
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        ReportingService2005.FindItemsResponse ReportingService2005.ReportingService2005Soap.FindItems(ReportingService2005.FindItemsRequest request)
+        {
+            return base.Channel.FindItems(request);
+        }
+        
+        public ReportingService2005.ServerInfoHeader FindItems(string Folder, ReportingService2005.BooleanOperatorEnum BooleanOperator, ReportingService2005.SearchCondition[] Conditions, out ReportingService2005.CatalogItem[] Items)
+        {
+            ReportingService2005.FindItemsRequest inValue = new ReportingService2005.FindItemsRequest();
+            inValue.Folder = Folder;
+            inValue.BooleanOperator = BooleanOperator;
+            inValue.Conditions = Conditions;
+            ReportingService2005.FindItemsResponse retVal = ((ReportingService2005.ReportingService2005Soap)(this)).FindItems(inValue);
+            Items = retVal.Items;
+            return retVal.ServerInfoHeader;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<ReportingService2005.FindItemsResponse> ReportingService2005.ReportingService2005Soap.FindItemsAsync(ReportingService2005.FindItemsRequest request)
         {
             return base.Channel.FindItemsAsync(request);
@@ -11203,6 +12508,23 @@ namespace ReportingService2005
             inValue.BooleanOperator = BooleanOperator;
             inValue.Conditions = Conditions;
             return ((ReportingService2005.ReportingService2005Soap)(this)).FindItemsAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        ReportingService2005.CreateScheduleResponse ReportingService2005.ReportingService2005Soap.CreateSchedule(ReportingService2005.CreateScheduleRequest request)
+        {
+            return base.Channel.CreateSchedule(request);
+        }
+        
+        public ReportingService2005.ServerInfoHeader CreateSchedule(ReportingService2005.BatchHeader BatchHeader, string Name, ReportingService2005.ScheduleDefinition ScheduleDefinition, out string ScheduleID)
+        {
+            ReportingService2005.CreateScheduleRequest inValue = new ReportingService2005.CreateScheduleRequest();
+            inValue.BatchHeader = BatchHeader;
+            inValue.Name = Name;
+            inValue.ScheduleDefinition = ScheduleDefinition;
+            ReportingService2005.CreateScheduleResponse retVal = ((ReportingService2005.ReportingService2005Soap)(this)).CreateSchedule(inValue);
+            ScheduleID = retVal.ScheduleID;
+            return retVal.ServerInfoHeader;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -11221,6 +12543,21 @@ namespace ReportingService2005
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        ReportingService2005.DeleteScheduleResponse ReportingService2005.ReportingService2005Soap.DeleteSchedule(ReportingService2005.DeleteScheduleRequest request)
+        {
+            return base.Channel.DeleteSchedule(request);
+        }
+        
+        public ReportingService2005.ServerInfoHeader DeleteSchedule(ReportingService2005.BatchHeader BatchHeader, string ScheduleID)
+        {
+            ReportingService2005.DeleteScheduleRequest inValue = new ReportingService2005.DeleteScheduleRequest();
+            inValue.BatchHeader = BatchHeader;
+            inValue.ScheduleID = ScheduleID;
+            ReportingService2005.DeleteScheduleResponse retVal = ((ReportingService2005.ReportingService2005Soap)(this)).DeleteSchedule(inValue);
+            return retVal.ServerInfoHeader;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<ReportingService2005.DeleteScheduleResponse> ReportingService2005.ReportingService2005Soap.DeleteScheduleAsync(ReportingService2005.DeleteScheduleRequest request)
         {
             return base.Channel.DeleteScheduleAsync(request);
@@ -11232,6 +12569,23 @@ namespace ReportingService2005
             inValue.BatchHeader = BatchHeader;
             inValue.ScheduleID = ScheduleID;
             return ((ReportingService2005.ReportingService2005Soap)(this)).DeleteScheduleAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        ReportingService2005.SetSchedulePropertiesResponse ReportingService2005.ReportingService2005Soap.SetScheduleProperties(ReportingService2005.SetSchedulePropertiesRequest request)
+        {
+            return base.Channel.SetScheduleProperties(request);
+        }
+        
+        public ReportingService2005.ServerInfoHeader SetScheduleProperties(ReportingService2005.BatchHeader BatchHeader, string Name, string ScheduleID, ReportingService2005.ScheduleDefinition ScheduleDefinition)
+        {
+            ReportingService2005.SetSchedulePropertiesRequest inValue = new ReportingService2005.SetSchedulePropertiesRequest();
+            inValue.BatchHeader = BatchHeader;
+            inValue.Name = Name;
+            inValue.ScheduleID = ScheduleID;
+            inValue.ScheduleDefinition = ScheduleDefinition;
+            ReportingService2005.SetSchedulePropertiesResponse retVal = ((ReportingService2005.ReportingService2005Soap)(this)).SetScheduleProperties(inValue);
+            return retVal.ServerInfoHeader;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -11251,6 +12605,21 @@ namespace ReportingService2005
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        ReportingService2005.GetSchedulePropertiesResponse ReportingService2005.ReportingService2005Soap.GetScheduleProperties(ReportingService2005.GetSchedulePropertiesRequest request)
+        {
+            return base.Channel.GetScheduleProperties(request);
+        }
+        
+        public ReportingService2005.ServerInfoHeader GetScheduleProperties(string ScheduleID, out ReportingService2005.Schedule Schedule)
+        {
+            ReportingService2005.GetSchedulePropertiesRequest inValue = new ReportingService2005.GetSchedulePropertiesRequest();
+            inValue.ScheduleID = ScheduleID;
+            ReportingService2005.GetSchedulePropertiesResponse retVal = ((ReportingService2005.ReportingService2005Soap)(this)).GetScheduleProperties(inValue);
+            Schedule = retVal.Schedule;
+            return retVal.ServerInfoHeader;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<ReportingService2005.GetSchedulePropertiesResponse> ReportingService2005.ReportingService2005Soap.GetSchedulePropertiesAsync(ReportingService2005.GetSchedulePropertiesRequest request)
         {
             return base.Channel.GetSchedulePropertiesAsync(request);
@@ -11261,6 +12630,21 @@ namespace ReportingService2005
             ReportingService2005.GetSchedulePropertiesRequest inValue = new ReportingService2005.GetSchedulePropertiesRequest();
             inValue.ScheduleID = ScheduleID;
             return ((ReportingService2005.ReportingService2005Soap)(this)).GetSchedulePropertiesAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        ReportingService2005.ListScheduledReportsResponse ReportingService2005.ReportingService2005Soap.ListScheduledReports(ReportingService2005.ListScheduledReportsRequest request)
+        {
+            return base.Channel.ListScheduledReports(request);
+        }
+        
+        public ReportingService2005.ServerInfoHeader ListScheduledReports(string ScheduleID, out ReportingService2005.CatalogItem[] Reports)
+        {
+            ReportingService2005.ListScheduledReportsRequest inValue = new ReportingService2005.ListScheduledReportsRequest();
+            inValue.ScheduleID = ScheduleID;
+            ReportingService2005.ListScheduledReportsResponse retVal = ((ReportingService2005.ReportingService2005Soap)(this)).ListScheduledReports(inValue);
+            Reports = retVal.Reports;
+            return retVal.ServerInfoHeader;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -11277,6 +12661,20 @@ namespace ReportingService2005
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        ReportingService2005.ListSchedulesResponse ReportingService2005.ReportingService2005Soap.ListSchedules(ReportingService2005.ListSchedulesRequest request)
+        {
+            return base.Channel.ListSchedules(request);
+        }
+        
+        public ReportingService2005.ServerInfoHeader ListSchedules(out ReportingService2005.Schedule[] Schedules)
+        {
+            ReportingService2005.ListSchedulesRequest inValue = new ReportingService2005.ListSchedulesRequest();
+            ReportingService2005.ListSchedulesResponse retVal = ((ReportingService2005.ReportingService2005Soap)(this)).ListSchedules(inValue);
+            Schedules = retVal.Schedules;
+            return retVal.ServerInfoHeader;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<ReportingService2005.ListSchedulesResponse> ReportingService2005.ReportingService2005Soap.ListSchedulesAsync(ReportingService2005.ListSchedulesRequest request)
         {
             return base.Channel.ListSchedulesAsync(request);
@@ -11286,6 +12684,21 @@ namespace ReportingService2005
         {
             ReportingService2005.ListSchedulesRequest inValue = new ReportingService2005.ListSchedulesRequest();
             return ((ReportingService2005.ReportingService2005Soap)(this)).ListSchedulesAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        ReportingService2005.PauseScheduleResponse ReportingService2005.ReportingService2005Soap.PauseSchedule(ReportingService2005.PauseScheduleRequest request)
+        {
+            return base.Channel.PauseSchedule(request);
+        }
+        
+        public ReportingService2005.ServerInfoHeader PauseSchedule(ReportingService2005.BatchHeader BatchHeader, string ScheduleID)
+        {
+            ReportingService2005.PauseScheduleRequest inValue = new ReportingService2005.PauseScheduleRequest();
+            inValue.BatchHeader = BatchHeader;
+            inValue.ScheduleID = ScheduleID;
+            ReportingService2005.PauseScheduleResponse retVal = ((ReportingService2005.ReportingService2005Soap)(this)).PauseSchedule(inValue);
+            return retVal.ServerInfoHeader;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -11303,6 +12716,21 @@ namespace ReportingService2005
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        ReportingService2005.ResumeScheduleResponse ReportingService2005.ReportingService2005Soap.ResumeSchedule(ReportingService2005.ResumeScheduleRequest request)
+        {
+            return base.Channel.ResumeSchedule(request);
+        }
+        
+        public ReportingService2005.ServerInfoHeader ResumeSchedule(ReportingService2005.BatchHeader BatchHeader, string ScheduleID)
+        {
+            ReportingService2005.ResumeScheduleRequest inValue = new ReportingService2005.ResumeScheduleRequest();
+            inValue.BatchHeader = BatchHeader;
+            inValue.ScheduleID = ScheduleID;
+            ReportingService2005.ResumeScheduleResponse retVal = ((ReportingService2005.ReportingService2005Soap)(this)).ResumeSchedule(inValue);
+            return retVal.ServerInfoHeader;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<ReportingService2005.ResumeScheduleResponse> ReportingService2005.ReportingService2005Soap.ResumeScheduleAsync(ReportingService2005.ResumeScheduleRequest request)
         {
             return base.Channel.ResumeScheduleAsync(request);
@@ -11314,6 +12742,27 @@ namespace ReportingService2005
             inValue.BatchHeader = BatchHeader;
             inValue.ScheduleID = ScheduleID;
             return ((ReportingService2005.ReportingService2005Soap)(this)).ResumeScheduleAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        ReportingService2005.CreateSubscriptionResponse ReportingService2005.ReportingService2005Soap.CreateSubscription(ReportingService2005.CreateSubscriptionRequest request)
+        {
+            return base.Channel.CreateSubscription(request);
+        }
+        
+        public ReportingService2005.ServerInfoHeader CreateSubscription(ReportingService2005.BatchHeader BatchHeader, string Report, ReportingService2005.ExtensionSettings ExtensionSettings, string Description, string EventType, string MatchData, ReportingService2005.ParameterValue[] Parameters, out string SubscriptionID)
+        {
+            ReportingService2005.CreateSubscriptionRequest inValue = new ReportingService2005.CreateSubscriptionRequest();
+            inValue.BatchHeader = BatchHeader;
+            inValue.Report = Report;
+            inValue.ExtensionSettings = ExtensionSettings;
+            inValue.Description = Description;
+            inValue.EventType = EventType;
+            inValue.MatchData = MatchData;
+            inValue.Parameters = Parameters;
+            ReportingService2005.CreateSubscriptionResponse retVal = ((ReportingService2005.ReportingService2005Soap)(this)).CreateSubscription(inValue);
+            SubscriptionID = retVal.SubscriptionID;
+            return retVal.ServerInfoHeader;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -11333,6 +12782,28 @@ namespace ReportingService2005
             inValue.MatchData = MatchData;
             inValue.Parameters = Parameters;
             return ((ReportingService2005.ReportingService2005Soap)(this)).CreateSubscriptionAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        ReportingService2005.CreateDataDrivenSubscriptionResponse ReportingService2005.ReportingService2005Soap.CreateDataDrivenSubscription(ReportingService2005.CreateDataDrivenSubscriptionRequest request)
+        {
+            return base.Channel.CreateDataDrivenSubscription(request);
+        }
+        
+        public ReportingService2005.ServerInfoHeader CreateDataDrivenSubscription(ReportingService2005.BatchHeader BatchHeader, string Report, ReportingService2005.ExtensionSettings ExtensionSettings, ReportingService2005.DataRetrievalPlan DataRetrievalPlan, string Description, string EventType, string MatchData, ReportingService2005.ParameterValueOrFieldReference[] Parameters, out string SubscriptionID)
+        {
+            ReportingService2005.CreateDataDrivenSubscriptionRequest inValue = new ReportingService2005.CreateDataDrivenSubscriptionRequest();
+            inValue.BatchHeader = BatchHeader;
+            inValue.Report = Report;
+            inValue.ExtensionSettings = ExtensionSettings;
+            inValue.DataRetrievalPlan = DataRetrievalPlan;
+            inValue.Description = Description;
+            inValue.EventType = EventType;
+            inValue.MatchData = MatchData;
+            inValue.Parameters = Parameters;
+            ReportingService2005.CreateDataDrivenSubscriptionResponse retVal = ((ReportingService2005.ReportingService2005Soap)(this)).CreateDataDrivenSubscription(inValue);
+            SubscriptionID = retVal.SubscriptionID;
+            return retVal.ServerInfoHeader;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -11356,6 +12827,26 @@ namespace ReportingService2005
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        ReportingService2005.SetSubscriptionPropertiesResponse ReportingService2005.ReportingService2005Soap.SetSubscriptionProperties(ReportingService2005.SetSubscriptionPropertiesRequest request)
+        {
+            return base.Channel.SetSubscriptionProperties(request);
+        }
+        
+        public ReportingService2005.ServerInfoHeader SetSubscriptionProperties(ReportingService2005.BatchHeader BatchHeader, string SubscriptionID, ReportingService2005.ExtensionSettings ExtensionSettings, string Description, string EventType, string MatchData, ReportingService2005.ParameterValue[] Parameters)
+        {
+            ReportingService2005.SetSubscriptionPropertiesRequest inValue = new ReportingService2005.SetSubscriptionPropertiesRequest();
+            inValue.BatchHeader = BatchHeader;
+            inValue.SubscriptionID = SubscriptionID;
+            inValue.ExtensionSettings = ExtensionSettings;
+            inValue.Description = Description;
+            inValue.EventType = EventType;
+            inValue.MatchData = MatchData;
+            inValue.Parameters = Parameters;
+            ReportingService2005.SetSubscriptionPropertiesResponse retVal = ((ReportingService2005.ReportingService2005Soap)(this)).SetSubscriptionProperties(inValue);
+            return retVal.ServerInfoHeader;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<ReportingService2005.SetSubscriptionPropertiesResponse> ReportingService2005.ReportingService2005Soap.SetSubscriptionPropertiesAsync(ReportingService2005.SetSubscriptionPropertiesRequest request)
         {
             return base.Channel.SetSubscriptionPropertiesAsync(request);
@@ -11372,6 +12863,27 @@ namespace ReportingService2005
             inValue.MatchData = MatchData;
             inValue.Parameters = Parameters;
             return ((ReportingService2005.ReportingService2005Soap)(this)).SetSubscriptionPropertiesAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        ReportingService2005.SetDataDrivenSubscriptionPropertiesResponse ReportingService2005.ReportingService2005Soap.SetDataDrivenSubscriptionProperties(ReportingService2005.SetDataDrivenSubscriptionPropertiesRequest request)
+        {
+            return base.Channel.SetDataDrivenSubscriptionProperties(request);
+        }
+        
+        public ReportingService2005.ServerInfoHeader SetDataDrivenSubscriptionProperties(ReportingService2005.BatchHeader BatchHeader, string DataDrivenSubscriptionID, ReportingService2005.ExtensionSettings ExtensionSettings, ReportingService2005.DataRetrievalPlan DataRetrievalPlan, string Description, string EventType, string MatchData, ReportingService2005.ParameterValueOrFieldReference[] Parameters)
+        {
+            ReportingService2005.SetDataDrivenSubscriptionPropertiesRequest inValue = new ReportingService2005.SetDataDrivenSubscriptionPropertiesRequest();
+            inValue.BatchHeader = BatchHeader;
+            inValue.DataDrivenSubscriptionID = DataDrivenSubscriptionID;
+            inValue.ExtensionSettings = ExtensionSettings;
+            inValue.DataRetrievalPlan = DataRetrievalPlan;
+            inValue.Description = Description;
+            inValue.EventType = EventType;
+            inValue.MatchData = MatchData;
+            inValue.Parameters = Parameters;
+            ReportingService2005.SetDataDrivenSubscriptionPropertiesResponse retVal = ((ReportingService2005.ReportingService2005Soap)(this)).SetDataDrivenSubscriptionProperties(inValue);
+            return retVal.ServerInfoHeader;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -11394,14 +12906,74 @@ namespace ReportingService2005
             return ((ReportingService2005.ReportingService2005Soap)(this)).SetDataDrivenSubscriptionPropertiesAsync(inValue);
         }
         
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        ReportingService2005.GetSubscriptionPropertiesResponse ReportingService2005.ReportingService2005Soap.GetSubscriptionProperties(ReportingService2005.GetSubscriptionPropertiesRequest request)
+        {
+            return base.Channel.GetSubscriptionProperties(request);
+        }
+        
+        public ReportingService2005.ServerInfoHeader GetSubscriptionProperties(string SubscriptionID, out string Owner, out ReportingService2005.ExtensionSettings ExtensionSettings, out string Description, out ReportingService2005.ActiveState Active, out string Status, out string EventType, out string MatchData, out ReportingService2005.ParameterValue[] Parameters)
+        {
+            ReportingService2005.GetSubscriptionPropertiesRequest inValue = new ReportingService2005.GetSubscriptionPropertiesRequest();
+            inValue.SubscriptionID = SubscriptionID;
+            ReportingService2005.GetSubscriptionPropertiesResponse retVal = ((ReportingService2005.ReportingService2005Soap)(this)).GetSubscriptionProperties(inValue);
+            Owner = retVal.Owner;
+            ExtensionSettings = retVal.ExtensionSettings;
+            Description = retVal.Description;
+            Active = retVal.Active;
+            Status = retVal.Status;
+            EventType = retVal.EventType;
+            MatchData = retVal.MatchData;
+            Parameters = retVal.Parameters;
+            return retVal.ServerInfoHeader;
+        }
+        
         public System.Threading.Tasks.Task<ReportingService2005.GetSubscriptionPropertiesResponse> GetSubscriptionPropertiesAsync(ReportingService2005.GetSubscriptionPropertiesRequest request)
         {
             return base.Channel.GetSubscriptionPropertiesAsync(request);
         }
         
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        ReportingService2005.GetDataDrivenSubscriptionPropertiesResponse ReportingService2005.ReportingService2005Soap.GetDataDrivenSubscriptionProperties(ReportingService2005.GetDataDrivenSubscriptionPropertiesRequest request)
+        {
+            return base.Channel.GetDataDrivenSubscriptionProperties(request);
+        }
+        
+        public ReportingService2005.ServerInfoHeader GetDataDrivenSubscriptionProperties(string DataDrivenSubscriptionID, out string Owner, out ReportingService2005.ExtensionSettings ExtensionSettings, out ReportingService2005.DataRetrievalPlan DataRetrievalPlan, out string Description, out ReportingService2005.ActiveState Active, out string Status, out string EventType, out string MatchData, out ReportingService2005.ParameterValueOrFieldReference[] Parameters)
+        {
+            ReportingService2005.GetDataDrivenSubscriptionPropertiesRequest inValue = new ReportingService2005.GetDataDrivenSubscriptionPropertiesRequest();
+            inValue.DataDrivenSubscriptionID = DataDrivenSubscriptionID;
+            ReportingService2005.GetDataDrivenSubscriptionPropertiesResponse retVal = ((ReportingService2005.ReportingService2005Soap)(this)).GetDataDrivenSubscriptionProperties(inValue);
+            Owner = retVal.Owner;
+            ExtensionSettings = retVal.ExtensionSettings;
+            DataRetrievalPlan = retVal.DataRetrievalPlan;
+            Description = retVal.Description;
+            Active = retVal.Active;
+            Status = retVal.Status;
+            EventType = retVal.EventType;
+            MatchData = retVal.MatchData;
+            Parameters = retVal.Parameters;
+            return retVal.ServerInfoHeader;
+        }
+        
         public System.Threading.Tasks.Task<ReportingService2005.GetDataDrivenSubscriptionPropertiesResponse> GetDataDrivenSubscriptionPropertiesAsync(ReportingService2005.GetDataDrivenSubscriptionPropertiesRequest request)
         {
             return base.Channel.GetDataDrivenSubscriptionPropertiesAsync(request);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        ReportingService2005.DeleteSubscriptionResponse ReportingService2005.ReportingService2005Soap.DeleteSubscription(ReportingService2005.DeleteSubscriptionRequest request)
+        {
+            return base.Channel.DeleteSubscription(request);
+        }
+        
+        public ReportingService2005.ServerInfoHeader DeleteSubscription(ReportingService2005.BatchHeader BatchHeader, string SubscriptionID)
+        {
+            ReportingService2005.DeleteSubscriptionRequest inValue = new ReportingService2005.DeleteSubscriptionRequest();
+            inValue.BatchHeader = BatchHeader;
+            inValue.SubscriptionID = SubscriptionID;
+            ReportingService2005.DeleteSubscriptionResponse retVal = ((ReportingService2005.ReportingService2005Soap)(this)).DeleteSubscription(inValue);
+            return retVal.ServerInfoHeader;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -11418,9 +12990,43 @@ namespace ReportingService2005
             return ((ReportingService2005.ReportingService2005Soap)(this)).DeleteSubscriptionAsync(inValue);
         }
         
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        ReportingService2005.PrepareQueryResponse ReportingService2005.ReportingService2005Soap.PrepareQuery(ReportingService2005.PrepareQueryRequest request)
+        {
+            return base.Channel.PrepareQuery(request);
+        }
+        
+        public ReportingService2005.ServerInfoHeader PrepareQuery(ReportingService2005.BatchHeader BatchHeader, ReportingService2005.DataSource DataSource, ReportingService2005.DataSetDefinition DataSet, out ReportingService2005.DataSetDefinition DataSettings, out bool Changed, out string[] ParameterNames)
+        {
+            ReportingService2005.PrepareQueryRequest inValue = new ReportingService2005.PrepareQueryRequest();
+            inValue.BatchHeader = BatchHeader;
+            inValue.DataSource = DataSource;
+            inValue.DataSet = DataSet;
+            ReportingService2005.PrepareQueryResponse retVal = ((ReportingService2005.ReportingService2005Soap)(this)).PrepareQuery(inValue);
+            DataSettings = retVal.DataSettings;
+            Changed = retVal.Changed;
+            ParameterNames = retVal.ParameterNames;
+            return retVal.ServerInfoHeader;
+        }
+        
         public System.Threading.Tasks.Task<ReportingService2005.PrepareQueryResponse> PrepareQueryAsync(ReportingService2005.PrepareQueryRequest request)
         {
             return base.Channel.PrepareQueryAsync(request);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        ReportingService2005.GetExtensionSettingsResponse ReportingService2005.ReportingService2005Soap.GetExtensionSettings(ReportingService2005.GetExtensionSettingsRequest request)
+        {
+            return base.Channel.GetExtensionSettings(request);
+        }
+        
+        public ReportingService2005.ServerInfoHeader GetExtensionSettings(string Extension, out ReportingService2005.ExtensionParameter[] ExtensionParameters)
+        {
+            ReportingService2005.GetExtensionSettingsRequest inValue = new ReportingService2005.GetExtensionSettingsRequest();
+            inValue.Extension = Extension;
+            ReportingService2005.GetExtensionSettingsResponse retVal = ((ReportingService2005.ReportingService2005Soap)(this)).GetExtensionSettings(inValue);
+            ExtensionParameters = retVal.ExtensionParameters;
+            return retVal.ServerInfoHeader;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -11434,6 +13040,22 @@ namespace ReportingService2005
             ReportingService2005.GetExtensionSettingsRequest inValue = new ReportingService2005.GetExtensionSettingsRequest();
             inValue.Extension = Extension;
             return ((ReportingService2005.ReportingService2005Soap)(this)).GetExtensionSettingsAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        ReportingService2005.ValidateExtensionSettingsResponse ReportingService2005.ReportingService2005Soap.ValidateExtensionSettings(ReportingService2005.ValidateExtensionSettingsRequest request)
+        {
+            return base.Channel.ValidateExtensionSettings(request);
+        }
+        
+        public ReportingService2005.ServerInfoHeader ValidateExtensionSettings(string Extension, ReportingService2005.ParameterValueOrFieldReference[] ParameterValues, out ReportingService2005.ExtensionParameter[] ParameterErrors)
+        {
+            ReportingService2005.ValidateExtensionSettingsRequest inValue = new ReportingService2005.ValidateExtensionSettingsRequest();
+            inValue.Extension = Extension;
+            inValue.ParameterValues = ParameterValues;
+            ReportingService2005.ValidateExtensionSettingsResponse retVal = ((ReportingService2005.ReportingService2005Soap)(this)).ValidateExtensionSettings(inValue);
+            ParameterErrors = retVal.ParameterErrors;
+            return retVal.ServerInfoHeader;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -11451,6 +13073,22 @@ namespace ReportingService2005
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        ReportingService2005.ListSubscriptionsResponse ReportingService2005.ReportingService2005Soap.ListSubscriptions(ReportingService2005.ListSubscriptionsRequest request)
+        {
+            return base.Channel.ListSubscriptions(request);
+        }
+        
+        public ReportingService2005.ServerInfoHeader ListSubscriptions(string Report, string Owner, out ReportingService2005.Subscription[] SubscriptionItems)
+        {
+            ReportingService2005.ListSubscriptionsRequest inValue = new ReportingService2005.ListSubscriptionsRequest();
+            inValue.Report = Report;
+            inValue.Owner = Owner;
+            ReportingService2005.ListSubscriptionsResponse retVal = ((ReportingService2005.ReportingService2005Soap)(this)).ListSubscriptions(inValue);
+            SubscriptionItems = retVal.SubscriptionItems;
+            return retVal.ServerInfoHeader;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<ReportingService2005.ListSubscriptionsResponse> ReportingService2005.ReportingService2005Soap.ListSubscriptionsAsync(ReportingService2005.ListSubscriptionsRequest request)
         {
             return base.Channel.ListSubscriptionsAsync(request);
@@ -11462,6 +13100,21 @@ namespace ReportingService2005
             inValue.Report = Report;
             inValue.Owner = Owner;
             return ((ReportingService2005.ReportingService2005Soap)(this)).ListSubscriptionsAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        ReportingService2005.ListSubscriptionsUsingDataSourceResponse ReportingService2005.ReportingService2005Soap.ListSubscriptionsUsingDataSource(ReportingService2005.ListSubscriptionsUsingDataSourceRequest request)
+        {
+            return base.Channel.ListSubscriptionsUsingDataSource(request);
+        }
+        
+        public ReportingService2005.ServerInfoHeader ListSubscriptionsUsingDataSource(string DataSource, out ReportingService2005.Subscription[] SubscriptionItems)
+        {
+            ReportingService2005.ListSubscriptionsUsingDataSourceRequest inValue = new ReportingService2005.ListSubscriptionsUsingDataSourceRequest();
+            inValue.DataSource = DataSource;
+            ReportingService2005.ListSubscriptionsUsingDataSourceResponse retVal = ((ReportingService2005.ReportingService2005Soap)(this)).ListSubscriptionsUsingDataSource(inValue);
+            SubscriptionItems = retVal.SubscriptionItems;
+            return retVal.ServerInfoHeader;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -11478,6 +13131,21 @@ namespace ReportingService2005
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        ReportingService2005.ListExtensionsResponse ReportingService2005.ReportingService2005Soap.ListExtensions(ReportingService2005.ListExtensionsRequest request)
+        {
+            return base.Channel.ListExtensions(request);
+        }
+        
+        public ReportingService2005.ServerInfoHeader ListExtensions(ReportingService2005.ExtensionTypeEnum ExtensionType, out ReportingService2005.Extension[] Extensions)
+        {
+            ReportingService2005.ListExtensionsRequest inValue = new ReportingService2005.ListExtensionsRequest();
+            inValue.ExtensionType = ExtensionType;
+            ReportingService2005.ListExtensionsResponse retVal = ((ReportingService2005.ReportingService2005Soap)(this)).ListExtensions(inValue);
+            Extensions = retVal.Extensions;
+            return retVal.ServerInfoHeader;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<ReportingService2005.ListExtensionsResponse> ReportingService2005.ReportingService2005Soap.ListExtensionsAsync(ReportingService2005.ListExtensionsRequest request)
         {
             return base.Channel.ListExtensionsAsync(request);
@@ -11491,6 +13159,20 @@ namespace ReportingService2005
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        ReportingService2005.ListEventsResponse ReportingService2005.ReportingService2005Soap.ListEvents(ReportingService2005.ListEventsRequest request)
+        {
+            return base.Channel.ListEvents(request);
+        }
+        
+        public ReportingService2005.ServerInfoHeader ListEvents(out ReportingService2005.Event[] Events)
+        {
+            ReportingService2005.ListEventsRequest inValue = new ReportingService2005.ListEventsRequest();
+            ReportingService2005.ListEventsResponse retVal = ((ReportingService2005.ReportingService2005Soap)(this)).ListEvents(inValue);
+            Events = retVal.Events;
+            return retVal.ServerInfoHeader;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<ReportingService2005.ListEventsResponse> ReportingService2005.ReportingService2005Soap.ListEventsAsync(ReportingService2005.ListEventsRequest request)
         {
             return base.Channel.ListEventsAsync(request);
@@ -11500,6 +13182,22 @@ namespace ReportingService2005
         {
             ReportingService2005.ListEventsRequest inValue = new ReportingService2005.ListEventsRequest();
             return ((ReportingService2005.ReportingService2005Soap)(this)).ListEventsAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        ReportingService2005.FireEventResponse ReportingService2005.ReportingService2005Soap.FireEvent(ReportingService2005.FireEventRequest request)
+        {
+            return base.Channel.FireEvent(request);
+        }
+        
+        public ReportingService2005.ServerInfoHeader FireEvent(ReportingService2005.BatchHeader BatchHeader, string EventType, string EventData)
+        {
+            ReportingService2005.FireEventRequest inValue = new ReportingService2005.FireEventRequest();
+            inValue.BatchHeader = BatchHeader;
+            inValue.EventType = EventType;
+            inValue.EventData = EventData;
+            ReportingService2005.FireEventResponse retVal = ((ReportingService2005.ReportingService2005Soap)(this)).FireEvent(inValue);
+            return retVal.ServerInfoHeader;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -11518,6 +13216,21 @@ namespace ReportingService2005
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        ReportingService2005.ListTasksResponse ReportingService2005.ReportingService2005Soap.ListTasks(ReportingService2005.ListTasksRequest request)
+        {
+            return base.Channel.ListTasks(request);
+        }
+        
+        public ReportingService2005.ServerInfoHeader ListTasks(ReportingService2005.SecurityScopeEnum SecurityScope, out ReportingService2005.Task[] Tasks)
+        {
+            ReportingService2005.ListTasksRequest inValue = new ReportingService2005.ListTasksRequest();
+            inValue.SecurityScope = SecurityScope;
+            ReportingService2005.ListTasksResponse retVal = ((ReportingService2005.ReportingService2005Soap)(this)).ListTasks(inValue);
+            Tasks = retVal.Tasks;
+            return retVal.ServerInfoHeader;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<ReportingService2005.ListTasksResponse> ReportingService2005.ReportingService2005Soap.ListTasksAsync(ReportingService2005.ListTasksRequest request)
         {
             return base.Channel.ListTasksAsync(request);
@@ -11531,6 +13244,21 @@ namespace ReportingService2005
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        ReportingService2005.ListRolesResponse ReportingService2005.ReportingService2005Soap.ListRoles(ReportingService2005.ListRolesRequest request)
+        {
+            return base.Channel.ListRoles(request);
+        }
+        
+        public ReportingService2005.ServerInfoHeader ListRoles(ReportingService2005.SecurityScopeEnum SecurityScope, out ReportingService2005.Role[] Roles)
+        {
+            ReportingService2005.ListRolesRequest inValue = new ReportingService2005.ListRolesRequest();
+            inValue.SecurityScope = SecurityScope;
+            ReportingService2005.ListRolesResponse retVal = ((ReportingService2005.ReportingService2005Soap)(this)).ListRoles(inValue);
+            Roles = retVal.Roles;
+            return retVal.ServerInfoHeader;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<ReportingService2005.ListRolesResponse> ReportingService2005.ReportingService2005Soap.ListRolesAsync(ReportingService2005.ListRolesRequest request)
         {
             return base.Channel.ListRolesAsync(request);
@@ -11541,6 +13269,23 @@ namespace ReportingService2005
             ReportingService2005.ListRolesRequest inValue = new ReportingService2005.ListRolesRequest();
             inValue.SecurityScope = SecurityScope;
             return ((ReportingService2005.ReportingService2005Soap)(this)).ListRolesAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        ReportingService2005.CreateRoleResponse ReportingService2005.ReportingService2005Soap.CreateRole(ReportingService2005.CreateRoleRequest request)
+        {
+            return base.Channel.CreateRole(request);
+        }
+        
+        public ReportingService2005.ServerInfoHeader CreateRole(ReportingService2005.BatchHeader BatchHeader, string Name, string Description, ReportingService2005.Task[] Tasks)
+        {
+            ReportingService2005.CreateRoleRequest inValue = new ReportingService2005.CreateRoleRequest();
+            inValue.BatchHeader = BatchHeader;
+            inValue.Name = Name;
+            inValue.Description = Description;
+            inValue.Tasks = Tasks;
+            ReportingService2005.CreateRoleResponse retVal = ((ReportingService2005.ReportingService2005Soap)(this)).CreateRole(inValue);
+            return retVal.ServerInfoHeader;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -11560,6 +13305,21 @@ namespace ReportingService2005
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        ReportingService2005.DeleteRoleResponse ReportingService2005.ReportingService2005Soap.DeleteRole(ReportingService2005.DeleteRoleRequest request)
+        {
+            return base.Channel.DeleteRole(request);
+        }
+        
+        public ReportingService2005.ServerInfoHeader DeleteRole(ReportingService2005.BatchHeader BatchHeader, string Name)
+        {
+            ReportingService2005.DeleteRoleRequest inValue = new ReportingService2005.DeleteRoleRequest();
+            inValue.BatchHeader = BatchHeader;
+            inValue.Name = Name;
+            ReportingService2005.DeleteRoleResponse retVal = ((ReportingService2005.ReportingService2005Soap)(this)).DeleteRole(inValue);
+            return retVal.ServerInfoHeader;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<ReportingService2005.DeleteRoleResponse> ReportingService2005.ReportingService2005Soap.DeleteRoleAsync(ReportingService2005.DeleteRoleRequest request)
         {
             return base.Channel.DeleteRoleAsync(request);
@@ -11573,9 +13333,42 @@ namespace ReportingService2005
             return ((ReportingService2005.ReportingService2005Soap)(this)).DeleteRoleAsync(inValue);
         }
         
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        ReportingService2005.GetRolePropertiesResponse ReportingService2005.ReportingService2005Soap.GetRoleProperties(ReportingService2005.GetRolePropertiesRequest request)
+        {
+            return base.Channel.GetRoleProperties(request);
+        }
+        
+        public ReportingService2005.ServerInfoHeader GetRoleProperties(string Name, out ReportingService2005.Task[] Tasks, out string Description)
+        {
+            ReportingService2005.GetRolePropertiesRequest inValue = new ReportingService2005.GetRolePropertiesRequest();
+            inValue.Name = Name;
+            ReportingService2005.GetRolePropertiesResponse retVal = ((ReportingService2005.ReportingService2005Soap)(this)).GetRoleProperties(inValue);
+            Tasks = retVal.Tasks;
+            Description = retVal.Description;
+            return retVal.ServerInfoHeader;
+        }
+        
         public System.Threading.Tasks.Task<ReportingService2005.GetRolePropertiesResponse> GetRolePropertiesAsync(ReportingService2005.GetRolePropertiesRequest request)
         {
             return base.Channel.GetRolePropertiesAsync(request);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        ReportingService2005.SetRolePropertiesResponse ReportingService2005.ReportingService2005Soap.SetRoleProperties(ReportingService2005.SetRolePropertiesRequest request)
+        {
+            return base.Channel.SetRoleProperties(request);
+        }
+        
+        public ReportingService2005.ServerInfoHeader SetRoleProperties(ReportingService2005.BatchHeader BatchHeader, string Name, string Description, ReportingService2005.Task[] Tasks)
+        {
+            ReportingService2005.SetRolePropertiesRequest inValue = new ReportingService2005.SetRolePropertiesRequest();
+            inValue.BatchHeader = BatchHeader;
+            inValue.Name = Name;
+            inValue.Description = Description;
+            inValue.Tasks = Tasks;
+            ReportingService2005.SetRolePropertiesResponse retVal = ((ReportingService2005.ReportingService2005Soap)(this)).SetRoleProperties(inValue);
+            return retVal.ServerInfoHeader;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -11595,6 +13388,20 @@ namespace ReportingService2005
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        ReportingService2005.GetSystemPoliciesResponse ReportingService2005.ReportingService2005Soap.GetSystemPolicies(ReportingService2005.GetSystemPoliciesRequest request)
+        {
+            return base.Channel.GetSystemPolicies(request);
+        }
+        
+        public ReportingService2005.ServerInfoHeader GetSystemPolicies(out ReportingService2005.Policy[] Policies)
+        {
+            ReportingService2005.GetSystemPoliciesRequest inValue = new ReportingService2005.GetSystemPoliciesRequest();
+            ReportingService2005.GetSystemPoliciesResponse retVal = ((ReportingService2005.ReportingService2005Soap)(this)).GetSystemPolicies(inValue);
+            Policies = retVal.Policies;
+            return retVal.ServerInfoHeader;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<ReportingService2005.GetSystemPoliciesResponse> ReportingService2005.ReportingService2005Soap.GetSystemPoliciesAsync(ReportingService2005.GetSystemPoliciesRequest request)
         {
             return base.Channel.GetSystemPoliciesAsync(request);
@@ -11604,6 +13411,21 @@ namespace ReportingService2005
         {
             ReportingService2005.GetSystemPoliciesRequest inValue = new ReportingService2005.GetSystemPoliciesRequest();
             return ((ReportingService2005.ReportingService2005Soap)(this)).GetSystemPoliciesAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        ReportingService2005.SetSystemPoliciesResponse ReportingService2005.ReportingService2005Soap.SetSystemPolicies(ReportingService2005.SetSystemPoliciesRequest request)
+        {
+            return base.Channel.SetSystemPolicies(request);
+        }
+        
+        public ReportingService2005.ServerInfoHeader SetSystemPolicies(ReportingService2005.BatchHeader BatchHeader, ReportingService2005.Policy[] Policies)
+        {
+            ReportingService2005.SetSystemPoliciesRequest inValue = new ReportingService2005.SetSystemPoliciesRequest();
+            inValue.BatchHeader = BatchHeader;
+            inValue.Policies = Policies;
+            ReportingService2005.SetSystemPoliciesResponse retVal = ((ReportingService2005.ReportingService2005Soap)(this)).SetSystemPolicies(inValue);
+            return retVal.ServerInfoHeader;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -11620,9 +13442,41 @@ namespace ReportingService2005
             return ((ReportingService2005.ReportingService2005Soap)(this)).SetSystemPoliciesAsync(inValue);
         }
         
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        ReportingService2005.GetPoliciesResponse ReportingService2005.ReportingService2005Soap.GetPolicies(ReportingService2005.GetPoliciesRequest request)
+        {
+            return base.Channel.GetPolicies(request);
+        }
+        
+        public ReportingService2005.ServerInfoHeader GetPolicies(string Item, out ReportingService2005.Policy[] Policies, out bool InheritParent)
+        {
+            ReportingService2005.GetPoliciesRequest inValue = new ReportingService2005.GetPoliciesRequest();
+            inValue.Item = Item;
+            ReportingService2005.GetPoliciesResponse retVal = ((ReportingService2005.ReportingService2005Soap)(this)).GetPolicies(inValue);
+            Policies = retVal.Policies;
+            InheritParent = retVal.InheritParent;
+            return retVal.ServerInfoHeader;
+        }
+        
         public System.Threading.Tasks.Task<ReportingService2005.GetPoliciesResponse> GetPoliciesAsync(ReportingService2005.GetPoliciesRequest request)
         {
             return base.Channel.GetPoliciesAsync(request);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        ReportingService2005.SetPoliciesResponse ReportingService2005.ReportingService2005Soap.SetPolicies(ReportingService2005.SetPoliciesRequest request)
+        {
+            return base.Channel.SetPolicies(request);
+        }
+        
+        public ReportingService2005.ServerInfoHeader SetPolicies(ReportingService2005.BatchHeader BatchHeader, string Item, ReportingService2005.Policy[] Policies)
+        {
+            ReportingService2005.SetPoliciesRequest inValue = new ReportingService2005.SetPoliciesRequest();
+            inValue.BatchHeader = BatchHeader;
+            inValue.Item = Item;
+            inValue.Policies = Policies;
+            ReportingService2005.SetPoliciesResponse retVal = ((ReportingService2005.ReportingService2005Soap)(this)).SetPolicies(inValue);
+            return retVal.ServerInfoHeader;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -11641,6 +13495,21 @@ namespace ReportingService2005
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        ReportingService2005.InheritParentSecurityResponse ReportingService2005.ReportingService2005Soap.InheritParentSecurity(ReportingService2005.InheritParentSecurityRequest request)
+        {
+            return base.Channel.InheritParentSecurity(request);
+        }
+        
+        public ReportingService2005.ServerInfoHeader InheritParentSecurity(ReportingService2005.BatchHeader BatchHeader, string Item)
+        {
+            ReportingService2005.InheritParentSecurityRequest inValue = new ReportingService2005.InheritParentSecurityRequest();
+            inValue.BatchHeader = BatchHeader;
+            inValue.Item = Item;
+            ReportingService2005.InheritParentSecurityResponse retVal = ((ReportingService2005.ReportingService2005Soap)(this)).InheritParentSecurity(inValue);
+            return retVal.ServerInfoHeader;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<ReportingService2005.InheritParentSecurityResponse> ReportingService2005.ReportingService2005Soap.InheritParentSecurityAsync(ReportingService2005.InheritParentSecurityRequest request)
         {
             return base.Channel.InheritParentSecurityAsync(request);
@@ -11652,6 +13521,20 @@ namespace ReportingService2005
             inValue.BatchHeader = BatchHeader;
             inValue.Item = Item;
             return ((ReportingService2005.ReportingService2005Soap)(this)).InheritParentSecurityAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        ReportingService2005.GetSystemPermissionsResponse ReportingService2005.ReportingService2005Soap.GetSystemPermissions(ReportingService2005.GetSystemPermissionsRequest request)
+        {
+            return base.Channel.GetSystemPermissions(request);
+        }
+        
+        public ReportingService2005.ServerInfoHeader GetSystemPermissions(out string[] Permissions)
+        {
+            ReportingService2005.GetSystemPermissionsRequest inValue = new ReportingService2005.GetSystemPermissionsRequest();
+            ReportingService2005.GetSystemPermissionsResponse retVal = ((ReportingService2005.ReportingService2005Soap)(this)).GetSystemPermissions(inValue);
+            Permissions = retVal.Permissions;
+            return retVal.ServerInfoHeader;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -11667,6 +13550,21 @@ namespace ReportingService2005
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        ReportingService2005.GetPermissionsResponse ReportingService2005.ReportingService2005Soap.GetPermissions(ReportingService2005.GetPermissionsRequest request)
+        {
+            return base.Channel.GetPermissions(request);
+        }
+        
+        public ReportingService2005.ServerInfoHeader GetPermissions(string Item, out string[] Permissions)
+        {
+            ReportingService2005.GetPermissionsRequest inValue = new ReportingService2005.GetPermissionsRequest();
+            inValue.Item = Item;
+            ReportingService2005.GetPermissionsResponse retVal = ((ReportingService2005.ReportingService2005Soap)(this)).GetPermissions(inValue);
+            Permissions = retVal.Permissions;
+            return retVal.ServerInfoHeader;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<ReportingService2005.GetPermissionsResponse> ReportingService2005.ReportingService2005Soap.GetPermissionsAsync(ReportingService2005.GetPermissionsRequest request)
         {
             return base.Channel.GetPermissionsAsync(request);
@@ -11677,6 +13575,22 @@ namespace ReportingService2005
             ReportingService2005.GetPermissionsRequest inValue = new ReportingService2005.GetPermissionsRequest();
             inValue.Item = Item;
             return ((ReportingService2005.ReportingService2005Soap)(this)).GetPermissionsAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        ReportingService2005.LogonUserResponse ReportingService2005.ReportingService2005Soap.LogonUser(ReportingService2005.LogonUserRequest request)
+        {
+            return base.Channel.LogonUser(request);
+        }
+        
+        public ReportingService2005.ServerInfoHeader LogonUser(string userName, string password, string authority)
+        {
+            ReportingService2005.LogonUserRequest inValue = new ReportingService2005.LogonUserRequest();
+            inValue.userName = userName;
+            inValue.password = password;
+            inValue.authority = authority;
+            ReportingService2005.LogonUserResponse retVal = ((ReportingService2005.ReportingService2005Soap)(this)).LogonUser(inValue);
+            return retVal.ServerInfoHeader;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -11695,6 +13609,19 @@ namespace ReportingService2005
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        ReportingService2005.LogoffResponse ReportingService2005.ReportingService2005Soap.Logoff(ReportingService2005.LogoffRequest request)
+        {
+            return base.Channel.Logoff(request);
+        }
+        
+        public ReportingService2005.ServerInfoHeader Logoff()
+        {
+            ReportingService2005.LogoffRequest inValue = new ReportingService2005.LogoffRequest();
+            ReportingService2005.LogoffResponse retVal = ((ReportingService2005.ReportingService2005Soap)(this)).Logoff(inValue);
+            return retVal.ServerInfoHeader;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<ReportingService2005.LogoffResponse> ReportingService2005.ReportingService2005Soap.LogoffAsync(ReportingService2005.LogoffRequest request)
         {
             return base.Channel.LogoffAsync(request);
@@ -11704,6 +13631,25 @@ namespace ReportingService2005
         {
             ReportingService2005.LogoffRequest inValue = new ReportingService2005.LogoffRequest();
             return ((ReportingService2005.ReportingService2005Soap)(this)).LogoffAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        ReportingService2005.CreateModelResponse ReportingService2005.ReportingService2005Soap.CreateModel(ReportingService2005.CreateModelRequest request)
+        {
+            return base.Channel.CreateModel(request);
+        }
+        
+        public ReportingService2005.ServerInfoHeader CreateModel(ReportingService2005.BatchHeader BatchHeader, string Model, string Parent, byte[] Definition, ReportingService2005.Property[] Properties, out ReportingService2005.Warning[] Warnings)
+        {
+            ReportingService2005.CreateModelRequest inValue = new ReportingService2005.CreateModelRequest();
+            inValue.BatchHeader = BatchHeader;
+            inValue.Model = Model;
+            inValue.Parent = Parent;
+            inValue.Definition = Definition;
+            inValue.Properties = Properties;
+            ReportingService2005.CreateModelResponse retVal = ((ReportingService2005.ReportingService2005Soap)(this)).CreateModel(inValue);
+            Warnings = retVal.Warnings;
+            return retVal.ServerInfoHeader;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -11724,6 +13670,21 @@ namespace ReportingService2005
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        ReportingService2005.GetModelDefinitionResponse ReportingService2005.ReportingService2005Soap.GetModelDefinition(ReportingService2005.GetModelDefinitionRequest request)
+        {
+            return base.Channel.GetModelDefinition(request);
+        }
+        
+        public ReportingService2005.ServerInfoHeader GetModelDefinition(string Model, out byte[] Definition)
+        {
+            ReportingService2005.GetModelDefinitionRequest inValue = new ReportingService2005.GetModelDefinitionRequest();
+            inValue.Model = Model;
+            ReportingService2005.GetModelDefinitionResponse retVal = ((ReportingService2005.ReportingService2005Soap)(this)).GetModelDefinition(inValue);
+            Definition = retVal.Definition;
+            return retVal.ServerInfoHeader;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<ReportingService2005.GetModelDefinitionResponse> ReportingService2005.ReportingService2005Soap.GetModelDefinitionAsync(ReportingService2005.GetModelDefinitionRequest request)
         {
             return base.Channel.GetModelDefinitionAsync(request);
@@ -11734,6 +13695,23 @@ namespace ReportingService2005
             ReportingService2005.GetModelDefinitionRequest inValue = new ReportingService2005.GetModelDefinitionRequest();
             inValue.Model = Model;
             return ((ReportingService2005.ReportingService2005Soap)(this)).GetModelDefinitionAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        ReportingService2005.SetModelDefinitionResponse ReportingService2005.ReportingService2005Soap.SetModelDefinition(ReportingService2005.SetModelDefinitionRequest request)
+        {
+            return base.Channel.SetModelDefinition(request);
+        }
+        
+        public ReportingService2005.ServerInfoHeader SetModelDefinition(ReportingService2005.BatchHeader BatchHeader, string Model, byte[] Definition, out ReportingService2005.Warning[] Warnings)
+        {
+            ReportingService2005.SetModelDefinitionRequest inValue = new ReportingService2005.SetModelDefinitionRequest();
+            inValue.BatchHeader = BatchHeader;
+            inValue.Model = Model;
+            inValue.Definition = Definition;
+            ReportingService2005.SetModelDefinitionResponse retVal = ((ReportingService2005.ReportingService2005Soap)(this)).SetModelDefinition(inValue);
+            Warnings = retVal.Warnings;
+            return retVal.ServerInfoHeader;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -11752,6 +13730,21 @@ namespace ReportingService2005
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        ReportingService2005.ListModelPerspectivesResponse ReportingService2005.ReportingService2005Soap.ListModelPerspectives(ReportingService2005.ListModelPerspectivesRequest request)
+        {
+            return base.Channel.ListModelPerspectives(request);
+        }
+        
+        public ReportingService2005.ServerInfoHeader ListModelPerspectives(string Model, out ReportingService2005.ModelCatalogItem[] ModelCatalogItems)
+        {
+            ReportingService2005.ListModelPerspectivesRequest inValue = new ReportingService2005.ListModelPerspectivesRequest();
+            inValue.Model = Model;
+            ReportingService2005.ListModelPerspectivesResponse retVal = ((ReportingService2005.ReportingService2005Soap)(this)).ListModelPerspectives(inValue);
+            ModelCatalogItems = retVal.ModelCatalogItems;
+            return retVal.ServerInfoHeader;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<ReportingService2005.ListModelPerspectivesResponse> ReportingService2005.ReportingService2005Soap.ListModelPerspectivesAsync(ReportingService2005.ListModelPerspectivesRequest request)
         {
             return base.Channel.ListModelPerspectivesAsync(request);
@@ -11762,6 +13755,22 @@ namespace ReportingService2005
             ReportingService2005.ListModelPerspectivesRequest inValue = new ReportingService2005.ListModelPerspectivesRequest();
             inValue.Model = Model;
             return ((ReportingService2005.ReportingService2005Soap)(this)).ListModelPerspectivesAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        ReportingService2005.GetUserModelResponse ReportingService2005.ReportingService2005Soap.GetUserModel(ReportingService2005.GetUserModelRequest request)
+        {
+            return base.Channel.GetUserModel(request);
+        }
+        
+        public ReportingService2005.ServerInfoHeader GetUserModel(string Model, string Perspective, out byte[] Definition)
+        {
+            ReportingService2005.GetUserModelRequest inValue = new ReportingService2005.GetUserModelRequest();
+            inValue.Model = Model;
+            inValue.Perspective = Perspective;
+            ReportingService2005.GetUserModelResponse retVal = ((ReportingService2005.ReportingService2005Soap)(this)).GetUserModel(inValue);
+            Definition = retVal.Definition;
+            return retVal.ServerInfoHeader;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -11776,6 +13785,23 @@ namespace ReportingService2005
             inValue.Model = Model;
             inValue.Perspective = Perspective;
             return ((ReportingService2005.ReportingService2005Soap)(this)).GetUserModelAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        ReportingService2005.ListModelItemChildrenResponse ReportingService2005.ReportingService2005Soap.ListModelItemChildren(ReportingService2005.ListModelItemChildrenRequest request)
+        {
+            return base.Channel.ListModelItemChildren(request);
+        }
+        
+        public ReportingService2005.ServerInfoHeader ListModelItemChildren(string Model, string ModelItemID, bool Recursive, out ReportingService2005.ModelItem[] ModelItems)
+        {
+            ReportingService2005.ListModelItemChildrenRequest inValue = new ReportingService2005.ListModelItemChildrenRequest();
+            inValue.Model = Model;
+            inValue.ModelItemID = ModelItemID;
+            inValue.Recursive = Recursive;
+            ReportingService2005.ListModelItemChildrenResponse retVal = ((ReportingService2005.ReportingService2005Soap)(this)).ListModelItemChildren(inValue);
+            ModelItems = retVal.ModelItems;
+            return retVal.ServerInfoHeader;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -11794,6 +13820,22 @@ namespace ReportingService2005
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        ReportingService2005.GetModelItemPermissionsResponse ReportingService2005.ReportingService2005Soap.GetModelItemPermissions(ReportingService2005.GetModelItemPermissionsRequest request)
+        {
+            return base.Channel.GetModelItemPermissions(request);
+        }
+        
+        public ReportingService2005.ServerInfoHeader GetModelItemPermissions(string Model, string ModelItemID, out string[] Permissions)
+        {
+            ReportingService2005.GetModelItemPermissionsRequest inValue = new ReportingService2005.GetModelItemPermissionsRequest();
+            inValue.Model = Model;
+            inValue.ModelItemID = ModelItemID;
+            ReportingService2005.GetModelItemPermissionsResponse retVal = ((ReportingService2005.ReportingService2005Soap)(this)).GetModelItemPermissions(inValue);
+            Permissions = retVal.Permissions;
+            return retVal.ServerInfoHeader;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<ReportingService2005.GetModelItemPermissionsResponse> ReportingService2005.ReportingService2005Soap.GetModelItemPermissionsAsync(ReportingService2005.GetModelItemPermissionsRequest request)
         {
             return base.Channel.GetModelItemPermissionsAsync(request);
@@ -11807,9 +13849,43 @@ namespace ReportingService2005
             return ((ReportingService2005.ReportingService2005Soap)(this)).GetModelItemPermissionsAsync(inValue);
         }
         
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        ReportingService2005.GetModelItemPoliciesResponse ReportingService2005.ReportingService2005Soap.GetModelItemPolicies(ReportingService2005.GetModelItemPoliciesRequest request)
+        {
+            return base.Channel.GetModelItemPolicies(request);
+        }
+        
+        public ReportingService2005.ServerInfoHeader GetModelItemPolicies(string Model, string ModelItemID, out ReportingService2005.Policy[] Policies, out bool InheritParent)
+        {
+            ReportingService2005.GetModelItemPoliciesRequest inValue = new ReportingService2005.GetModelItemPoliciesRequest();
+            inValue.Model = Model;
+            inValue.ModelItemID = ModelItemID;
+            ReportingService2005.GetModelItemPoliciesResponse retVal = ((ReportingService2005.ReportingService2005Soap)(this)).GetModelItemPolicies(inValue);
+            Policies = retVal.Policies;
+            InheritParent = retVal.InheritParent;
+            return retVal.ServerInfoHeader;
+        }
+        
         public System.Threading.Tasks.Task<ReportingService2005.GetModelItemPoliciesResponse> GetModelItemPoliciesAsync(ReportingService2005.GetModelItemPoliciesRequest request)
         {
             return base.Channel.GetModelItemPoliciesAsync(request);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        ReportingService2005.SetModelItemPoliciesResponse ReportingService2005.ReportingService2005Soap.SetModelItemPolicies(ReportingService2005.SetModelItemPoliciesRequest request)
+        {
+            return base.Channel.SetModelItemPolicies(request);
+        }
+        
+        public ReportingService2005.ServerInfoHeader SetModelItemPolicies(ReportingService2005.BatchHeader BatchHeader, string Model, string ModelItemID, ReportingService2005.Policy[] Policies)
+        {
+            ReportingService2005.SetModelItemPoliciesRequest inValue = new ReportingService2005.SetModelItemPoliciesRequest();
+            inValue.BatchHeader = BatchHeader;
+            inValue.Model = Model;
+            inValue.ModelItemID = ModelItemID;
+            inValue.Policies = Policies;
+            ReportingService2005.SetModelItemPoliciesResponse retVal = ((ReportingService2005.ReportingService2005Soap)(this)).SetModelItemPolicies(inValue);
+            return retVal.ServerInfoHeader;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -11829,6 +13905,22 @@ namespace ReportingService2005
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        ReportingService2005.InheritModelItemParentSecurityResponse ReportingService2005.ReportingService2005Soap.InheritModelItemParentSecurity(ReportingService2005.InheritModelItemParentSecurityRequest request)
+        {
+            return base.Channel.InheritModelItemParentSecurity(request);
+        }
+        
+        public ReportingService2005.ServerInfoHeader InheritModelItemParentSecurity(ReportingService2005.BatchHeader BatchHeader, string Model, string ModelItemID)
+        {
+            ReportingService2005.InheritModelItemParentSecurityRequest inValue = new ReportingService2005.InheritModelItemParentSecurityRequest();
+            inValue.BatchHeader = BatchHeader;
+            inValue.Model = Model;
+            inValue.ModelItemID = ModelItemID;
+            ReportingService2005.InheritModelItemParentSecurityResponse retVal = ((ReportingService2005.ReportingService2005Soap)(this)).InheritModelItemParentSecurity(inValue);
+            return retVal.ServerInfoHeader;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<ReportingService2005.InheritModelItemParentSecurityResponse> ReportingService2005.ReportingService2005Soap.InheritModelItemParentSecurityAsync(ReportingService2005.InheritModelItemParentSecurityRequest request)
         {
             return base.Channel.InheritModelItemParentSecurityAsync(request);
@@ -11844,6 +13936,21 @@ namespace ReportingService2005
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        ReportingService2005.RemoveAllModelItemPoliciesResponse ReportingService2005.ReportingService2005Soap.RemoveAllModelItemPolicies(ReportingService2005.RemoveAllModelItemPoliciesRequest request)
+        {
+            return base.Channel.RemoveAllModelItemPolicies(request);
+        }
+        
+        public ReportingService2005.ServerInfoHeader RemoveAllModelItemPolicies(ReportingService2005.BatchHeader BatchHeader, string Model)
+        {
+            ReportingService2005.RemoveAllModelItemPoliciesRequest inValue = new ReportingService2005.RemoveAllModelItemPoliciesRequest();
+            inValue.BatchHeader = BatchHeader;
+            inValue.Model = Model;
+            ReportingService2005.RemoveAllModelItemPoliciesResponse retVal = ((ReportingService2005.ReportingService2005Soap)(this)).RemoveAllModelItemPolicies(inValue);
+            return retVal.ServerInfoHeader;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<ReportingService2005.RemoveAllModelItemPoliciesResponse> ReportingService2005.ReportingService2005Soap.RemoveAllModelItemPoliciesAsync(ReportingService2005.RemoveAllModelItemPoliciesRequest request)
         {
             return base.Channel.RemoveAllModelItemPoliciesAsync(request);
@@ -11855,6 +13962,23 @@ namespace ReportingService2005
             inValue.BatchHeader = BatchHeader;
             inValue.Model = Model;
             return ((ReportingService2005.ReportingService2005Soap)(this)).RemoveAllModelItemPoliciesAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        ReportingService2005.SetModelDrillthroughReportsResponse ReportingService2005.ReportingService2005Soap.SetModelDrillthroughReports(ReportingService2005.SetModelDrillthroughReportsRequest request)
+        {
+            return base.Channel.SetModelDrillthroughReports(request);
+        }
+        
+        public ReportingService2005.ServerInfoHeader SetModelDrillthroughReports(ReportingService2005.BatchHeader BatchHeader, string Model, string ModelItemID, ReportingService2005.ModelDrillthroughReport[] Reports)
+        {
+            ReportingService2005.SetModelDrillthroughReportsRequest inValue = new ReportingService2005.SetModelDrillthroughReportsRequest();
+            inValue.BatchHeader = BatchHeader;
+            inValue.Model = Model;
+            inValue.ModelItemID = ModelItemID;
+            inValue.Reports = Reports;
+            ReportingService2005.SetModelDrillthroughReportsResponse retVal = ((ReportingService2005.ReportingService2005Soap)(this)).SetModelDrillthroughReports(inValue);
+            return retVal.ServerInfoHeader;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -11874,6 +13998,22 @@ namespace ReportingService2005
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        ReportingService2005.ListModelDrillthroughReportsResponse ReportingService2005.ReportingService2005Soap.ListModelDrillthroughReports(ReportingService2005.ListModelDrillthroughReportsRequest request)
+        {
+            return base.Channel.ListModelDrillthroughReports(request);
+        }
+        
+        public ReportingService2005.ServerInfoHeader ListModelDrillthroughReports(string Model, string ModelItemID, out ReportingService2005.ModelDrillthroughReport[] Reports)
+        {
+            ReportingService2005.ListModelDrillthroughReportsRequest inValue = new ReportingService2005.ListModelDrillthroughReportsRequest();
+            inValue.Model = Model;
+            inValue.ModelItemID = ModelItemID;
+            ReportingService2005.ListModelDrillthroughReportsResponse retVal = ((ReportingService2005.ReportingService2005Soap)(this)).ListModelDrillthroughReports(inValue);
+            Reports = retVal.Reports;
+            return retVal.ServerInfoHeader;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<ReportingService2005.ListModelDrillthroughReportsResponse> ReportingService2005.ReportingService2005Soap.ListModelDrillthroughReportsAsync(ReportingService2005.ListModelDrillthroughReportsRequest request)
         {
             return base.Channel.ListModelDrillthroughReportsAsync(request);
@@ -11885,6 +14025,25 @@ namespace ReportingService2005
             inValue.Model = Model;
             inValue.ModelItemID = ModelItemID;
             return ((ReportingService2005.ReportingService2005Soap)(this)).ListModelDrillthroughReportsAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        ReportingService2005.GenerateModelResponse ReportingService2005.ReportingService2005Soap.GenerateModel(ReportingService2005.GenerateModelRequest request)
+        {
+            return base.Channel.GenerateModel(request);
+        }
+        
+        public ReportingService2005.ServerInfoHeader GenerateModel(ReportingService2005.BatchHeader BatchHeader, string DataSource, string Model, string Parent, ReportingService2005.Property[] Properties, out ReportingService2005.Warning[] Warnings)
+        {
+            ReportingService2005.GenerateModelRequest inValue = new ReportingService2005.GenerateModelRequest();
+            inValue.BatchHeader = BatchHeader;
+            inValue.DataSource = DataSource;
+            inValue.Model = Model;
+            inValue.Parent = Parent;
+            inValue.Properties = Properties;
+            ReportingService2005.GenerateModelResponse retVal = ((ReportingService2005.ReportingService2005Soap)(this)).GenerateModel(inValue);
+            Warnings = retVal.Warnings;
+            return retVal.ServerInfoHeader;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -11902,6 +14061,22 @@ namespace ReportingService2005
             inValue.Parent = Parent;
             inValue.Properties = Properties;
             return ((ReportingService2005.ReportingService2005Soap)(this)).GenerateModelAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        ReportingService2005.RegenerateModelResponse ReportingService2005.ReportingService2005Soap.RegenerateModel(ReportingService2005.RegenerateModelRequest request)
+        {
+            return base.Channel.RegenerateModel(request);
+        }
+        
+        public ReportingService2005.ServerInfoHeader RegenerateModel(ReportingService2005.BatchHeader BatchHeader, string Model, out ReportingService2005.Warning[] Warnings)
+        {
+            ReportingService2005.RegenerateModelRequest inValue = new ReportingService2005.RegenerateModelRequest();
+            inValue.BatchHeader = BatchHeader;
+            inValue.Model = Model;
+            ReportingService2005.RegenerateModelResponse retVal = ((ReportingService2005.ReportingService2005Soap)(this)).RegenerateModel(inValue);
+            Warnings = retVal.Warnings;
+            return retVal.ServerInfoHeader;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -11937,7 +14112,6 @@ namespace ReportingService2005
                 result.ReaderQuotas = System.Xml.XmlDictionaryReaderQuotas.Max;
                 result.MaxReceivedMessageSize = int.MaxValue;
                 result.AllowCookies = true;
-                result.Security.Mode = System.ServiceModel.BasicHttpSecurityMode.Transport;
                 return result;
             }
             if ((endpointConfiguration == EndpointConfiguration.ReportingService2005Soap12))
@@ -11946,11 +14120,11 @@ namespace ReportingService2005
                 System.ServiceModel.Channels.TextMessageEncodingBindingElement textBindingElement = new System.ServiceModel.Channels.TextMessageEncodingBindingElement();
                 textBindingElement.MessageVersion = System.ServiceModel.Channels.MessageVersion.CreateVersion(System.ServiceModel.EnvelopeVersion.Soap12, System.ServiceModel.Channels.AddressingVersion.None);
                 result.Elements.Add(textBindingElement);
-                System.ServiceModel.Channels.HttpsTransportBindingElement httpsBindingElement = new System.ServiceModel.Channels.HttpsTransportBindingElement();
-                httpsBindingElement.AllowCookies = true;
-                httpsBindingElement.MaxBufferSize = int.MaxValue;
-                httpsBindingElement.MaxReceivedMessageSize = int.MaxValue;
-                result.Elements.Add(httpsBindingElement);
+                System.ServiceModel.Channels.HttpTransportBindingElement httpBindingElement = new System.ServiceModel.Channels.HttpTransportBindingElement();
+                httpBindingElement.AllowCookies = true;
+                httpBindingElement.MaxBufferSize = int.MaxValue;
+                httpBindingElement.MaxReceivedMessageSize = int.MaxValue;
+                result.Elements.Add(httpBindingElement);
                 return result;
             }
             throw new System.InvalidOperationException(string.Format("Could not find endpoint with name \'{0}\'.", endpointConfiguration));
@@ -11960,11 +14134,11 @@ namespace ReportingService2005
         {
             if ((endpointConfiguration == EndpointConfiguration.ReportingService2005Soap))
             {
-                return new System.ServiceModel.EndpointAddress("https://reports.betenbough.com/ReportServer/ReportService2005.asmx");
+                return new System.ServiceModel.EndpointAddress("http://sqllive/ReportServer/ReportService2005.asmx");
             }
             if ((endpointConfiguration == EndpointConfiguration.ReportingService2005Soap12))
             {
-                return new System.ServiceModel.EndpointAddress("https://reports.betenbough.com/ReportServer/ReportService2005.asmx");
+                return new System.ServiceModel.EndpointAddress("http://sqllive/ReportServer/ReportService2005.asmx");
             }
             throw new System.InvalidOperationException(string.Format("Could not find endpoint with name \'{0}\'.", endpointConfiguration));
         }
