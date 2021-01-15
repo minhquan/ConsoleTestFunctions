@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestCallWcfFromAspNet48", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApi31", "WebApi31\WebApi31.csproj", "{F8F9972B-5410-440D-88C9-7CBAF1358A0A}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetStandard20ToWcf.Tests", "NetStandard20ToWcf.Tests\NetStandard20ToWcf.Tests.csproj", "{970ACC3B-62D3-4BB0-B306-27A7D767CE4D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +59,10 @@ Global
 		{F8F9972B-5410-440D-88C9-7CBAF1358A0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F8F9972B-5410-440D-88C9-7CBAF1358A0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F8F9972B-5410-440D-88C9-7CBAF1358A0A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{970ACC3B-62D3-4BB0-B306-27A7D767CE4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{970ACC3B-62D3-4BB0-B306-27A7D767CE4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{970ACC3B-62D3-4BB0-B306-27A7D767CE4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{970ACC3B-62D3-4BB0-B306-27A7D767CE4D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
