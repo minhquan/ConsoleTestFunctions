@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Betenbough48", "Betenbough4
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestCallWcfFromAspNet48", "TestCallWcfFromAspNet48\TestCallWcfFromAspNet48.csproj", "{84A00A91-3805-4E72-BA32-EA551BD302CE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApi31", "WebApi31\WebApi31.csproj", "{F8F9972B-5410-440D-88C9-7CBAF1358A0A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{84A00A91-3805-4E72-BA32-EA551BD302CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{84A00A91-3805-4E72-BA32-EA551BD302CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{84A00A91-3805-4E72-BA32-EA551BD302CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8F9972B-5410-440D-88C9-7CBAF1358A0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8F9972B-5410-440D-88C9-7CBAF1358A0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8F9972B-5410-440D-88C9-7CBAF1358A0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8F9972B-5410-440D-88C9-7CBAF1358A0A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

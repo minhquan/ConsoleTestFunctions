@@ -15,6 +15,8 @@ namespace TestCallWcfFromAspNet48
         {
             //Label1.Text = new ReportWrapper48().GetReports();
             Label1.Text = await new ReportWrapper().GetReportsAsync();
+
+
         }
     }
 }
